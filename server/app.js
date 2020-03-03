@@ -39,7 +39,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Express View engine setup
-
 app.use(require('node-sass-middleware')({
   src:  path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
@@ -77,6 +76,20 @@ app.use(session({
 }))
 app.use(flash());
 require('./passport')(app);
+
+// Middleware Setup
+var whitelist = [
+  'http://localhost:3000'
+];
+var corsOptions = {
+  origin: function(origin, callback){
+      var originIsWhitelisted = whitelist.indexOf(origin) !== -1;
+      callback(null, originIsWhitelisted);
+  },
+  credentials: true
+};
+app.use(cors(corsOptions)); 
+
     
 
 const index = require('./routes/index');
@@ -92,7 +105,7 @@ mongoose.Promise = Promise;
 // Routes
 const router = require("./routes/auth");
 //const router = require("./routes/auth-routes");
-app.use('/', router);
+app.use('/api', router);
 
 
 /////////////////////////////////////// Google Auth
@@ -130,17 +143,5 @@ passport.use(
   )
 );
 
-// Middleware Setup
-var whitelist = [
-  'http://localhost:3000'
-];
-var corsOptions = {
-  origin: function(origin, callback){
-      var originIsWhitelisted = whitelist.indexOf(origin) !== -1;
-      callback(null, originIsWhitelisted);
-  },
-  credentials: true
-};
-app.use(cors(corsOptions)); 
 
 module.exports = app;
