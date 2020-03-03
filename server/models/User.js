@@ -10,6 +10,7 @@ const userSchema = new Schema({
     default: "images/default-avatar.png"
   },
   portfolios: [{ type: Schema.Types.ObjectId, ref: "Portfolio" }],
+  works: [{ type: Schema.Types.ObjectId, ref: "Work" }],
   sociallinks: [{ type: String }]
 }, 
 {
