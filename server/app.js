@@ -14,6 +14,7 @@ const MongoStore = require('connect-mongo')(session);
 const flash      = require("connect-flash");
 
 const User = require("./models/User");
+const Portfolio = require("./models/Portfolio");
 const passport = require('passport');
 const cors = require('cors');
 
@@ -91,12 +92,21 @@ var corsOptions = {
 app.use(cors(corsOptions)); 
 
     
-
+//This is for the routes
 const index = require('./routes/index');
 app.use('/', index);
 
 const authRoutes = require('./routes/auth');
 app.use('/auth', authRoutes);
+
+const usersRoutes = require('./routes/users');
+app.use('/users', usersRoutes);
+
+const portfolioRoutes = require('./routes/portfolios');
+app.use('/portfolios', portfolioRoutes);
+
+const workRoutes = require('./routes/works');
+app.use('/works', workRoutes);
       
 
 /////////////////////////////////////// Login Auth

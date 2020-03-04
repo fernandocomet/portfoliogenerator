@@ -192,97 +192,113 @@ let portfolios =
     _id: fc_uxdesigner,
     alias: fc_uxdesigner,
     title: "UX Designer",
-    subtitle: "Several freelance projects in the area of UX Design"
+    subtitle: "Several freelance projects in the area of UX Design",
+    works:[fc_uxdesigner1, fc_uxdesigner2, fc_uxdesigner3, fc_uxdesigner4, fc_uxdesigner5]
   },
   {
     _id: fc_photographer,
     alias: fc_photographer,
     title: "Photographer",
-    subtitle: "A collection of my best works, some of them awarded"
+    subtitle: "A collection of my best works, some of them awarded",
+    works:[fc_photographer1, fc_photographer2, fc_photographer3, fc_photographer4, fc_photographer5]    
   },
   {
     _id: fc_animator,
     alias: fc_animator,
     title: "Animator",
-    subtitle: "Some of my best works in Display Advertising, using animation libraries as gsap, velocity, pixie or 5pjs. Showing advanced effects with text, svg filters, etc."
+    subtitle: "Some of my best works in Display Advertising, using animation libraries as gsap, velocity, pixie or 5pjs. Showing advanced effects with text, svg filters, etc.",
+    works:[fc_animator1, fc_animator2, fc_animator3, fc_animator4, fc_animator5]   
   },
   {
     _id: fc_trendhunter,
     alias: fc_trendhunter,
     title: "Trendhunter",
-    subtitle: "Some of my best works in Display Advertising, using animation libraries as gsap, velocity, pixie or 5pjs. Showing advanced effects with text, svg filters, etc."
+    subtitle: "Some of my best works in Display Advertising, using animation libraries as gsap, velocity, pixie or 5pjs. Showing advanced effects with text, svg filters, etc.",
+    works:[fc_trendhunter1, fc_trendhunter2, fc_trendhunter3, fc_trendhunter4, fc_trendhunter5]   
   },
   {
     _id: fc_writer,
     alias: fc_writer,
     title: "Writer",
-    subtitle: "Some of my best posts on Medium."
+    subtitle: "Some of my best posts on Medium.",
+    works:[fc_writer1, fc_writer2, fc_writer3, fc_writer4, fc_writer5]   
   },
   {
     _id: ms_webdeveloper,
     alias: ms_webdeveloper,
     title: "Web Developer",
-    subtitle: "I just walked down the street on a rainy day, and told to myself: Code is poetry."
+    subtitle: "I just walked down the street on a rainy day, and told to myself: Code is poetry.",
+    works:[ms_webdeveloper1, ms_webdeveloper2, ms_webdeveloper3, ms_webdeveloper4, ms_webdeveloper5]   
   },
   {
     _id: ms_illustrator,
     alias: ms_illustrator,
     title: "Illustration",
-    subtitle: "Here my little drawings, some made freehand, others in acrylic, watercolor and oil. In them I represent the subrealism of the Murcian afternoon also know as `tardeo`."
+    subtitle: "Here my little drawings, some made freehand, others in acrylic, watercolor and oil. In them I represent the subrealism of the Murcian afternoon also know as `tardeo`.",
+    works:[ms_illustrator1, ms_illustrator2, ms_illustrator3, ms_illustrator4, ms_illustrator5]   
   },
   {
     _id: ms_designer,
     alias: ms_designer,
     title: "Designer",
-    subtitle: "Branding works for best projects."
+    subtitle: "Branding works for best projects.",
+    works:[ms_designer1, ms_designer2, ms_designer3, ms_designer4, ms_designer5]   
   },
   {
     _id: rdb_uxdesigner,
     alias: rdb_uxdesigner,
     title: "UX Designer",
-    subtitle: "Sketch - Design Thinking - Invision - Photoshop - Illustrator - Indesign."
+    subtitle: "Sketch - Design Thinking - Invision - Photoshop - Illustrator - Indesign.",
+    works:[rdb_uxdesigner1, rdb_uxdesigner2, rdb_uxdesigner3, rdb_uxdesigner4, rdb_uxdesigner5]   
   },
   {
     _id: rdb_illustrator,
     alias: rdb_illustrator,
     title: "Illustrator",
-    subtitle: "My best drawings."
+    subtitle: "My best drawings.",
+    works:[rdb_illustrator1, rdb_illustrator2, rdb_illustrator3, rdb_illustrator4, rdb_illustrator5]   
   },
   {
     _id: kol_webdesigner,
     alias: kol_webdesigner,
     title: "Web Designer",
-    subtitle: "Development of Digital Experiences, Creativity, Design & Production. Brand of the Digital Designer Gabriel Guerrero."
+    subtitle: "Development of Digital Experiences, Creativity, Design & Production. Brand of the Digital Designer Gabriel Guerrero.",
+    works:[kol_webdesigner1, kol_webdesigner2, kol_webdesigner3, kol_webdesigner4, kol_webdesigner5]   
   },
   {
     _id: kol_mobile,
     alias: kol_mobile,
     title: "Mobile",
-    subtitle: "Showing my best works in UI for Apps."
+    subtitle: "Showing my best works in UI for Apps.",
+    works:[kol_mobile1, kol_mobile2, kol_mobile3, kol_mobile4, kol_mobile5]   
   },
   {
     _id: kol_display,
     alias: kol_display,
     title: "Display",
-    subtitle: "My best works for the Display Advertising Ad industry, featuring Rich Media projects, DCO and advanced banners."
+    subtitle: "My best works for the Display Advertising Ad industry, featuring Rich Media projects, DCO and advanced banners.",
+    works:[kol_display1, kol_display2, kol_display3, kol_display4, kol_display5]   
   },
   {
     _id: misti_uxdesigner,
     alias: misti_uxdesigner,
     title: "UX Designer",
-    subtitle: "Research, Wireframing and prototyping focusing on the User Experience."
+    subtitle: "Research, Wireframing and prototyping focusing on the User Experience.",
+    works:[misti_uxdesigner1, misti_uxdesigner2, misti_uxdesigner3, misti_uxdesigner4, misti_uxdesigner5]   
   },
   {
     _id: misti_mobile,
     alias: misti_mobile,
     title: "Mobile Projects",
-    subtitle: "A compilation of works for Apps and Responsive sites."
+    subtitle: "A compilation of works for Apps and Responsive sites.",
+    works:[fc_photographer1, fc_photographer2, fc_photographer3, fc_photographer4, fc_photographer5]   
   }, 
   {
     _id: misti_prices,
     alias: misti_prices,
     title: "Awards & Prices",
-    subtitle: "Some of my best works awarded as a Creative Technologist."
+    subtitle: "Some of my best works awarded as a Creative Technologist.",
+    works:[misti_prices1, misti_prices2, misti_prices3, misti_prices4, misti_prices5]   
   }                                              
 ];
 
