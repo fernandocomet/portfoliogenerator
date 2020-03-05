@@ -6,7 +6,7 @@ const Work = require("../models/Work");
 const User = require("../models/User");
 const Portfolio = require("../models/Portfolio");
 
-/* Get all portfolios */
+/* Get all works */
 router.get("/", (req, res, next) => {
     Work.find()
       .then(allWorks => {
