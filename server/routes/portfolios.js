@@ -51,6 +51,7 @@ router.get('/new', (req, res, next) => {
 //This is ok at http://localhost:4000/portfolios/new
 
 /* Post to create new Portfolio */
+/*
 router.post('/new', (req, res, next) => {
   const {
       name,
@@ -94,7 +95,7 @@ router.post('/new', (req, res, next) => {
       })
   
   })
-
+*/
 
 
 /*  

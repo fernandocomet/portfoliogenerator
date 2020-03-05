@@ -1183,7 +1183,7 @@ https://unsplash.com/collections/420324/blurrrr
 
 //DataBase Connection for the three Collections
 mongoose
-  .connect(`${process.env.MONGODB_LOCAL}`, {
+  .connect(`${process.env.MONGODB_URL}`, {
     useNewUrlParser: true
   })
   .then(x => {
