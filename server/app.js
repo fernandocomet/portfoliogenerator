@@ -20,7 +20,7 @@ const cors = require('cors');
 
 
 mongoose
-  .connect(`${process.env.MONGODB_LOCAL}`, {useNewUrlParser: true})
+  .connect(`${process.env.MONGODB_URL}`, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })

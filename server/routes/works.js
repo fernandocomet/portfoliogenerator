@@ -47,10 +47,68 @@ router.get("/portfolioworks", (req, res, next) => {
   });
 //This is ok at http://localhost:4000/works/portfolioworks
 
+/* Route to Delete Work */
+router.delete('/delete/:id', (req, res, next) => {
+  Work.findByIdAndDelete(req.params.id)
+    .then(work => {
+      res.json(work);
+    })
+    .catch(err => console.log(err))
+})
+//This is working at http://localhost:4000/works/delete/id 
+
+
 /* Create new Work */
 router.get('/new', (req, res, next) => {
     res.json('new');
 })
 //This is ok at http://localhost:4000/works/new
+
+
+/* Route To create a new Work */
+router.post('/new', (req, res, next) => {
+
+  const { title, subtitle, description, images } = req.body
+  const newWork = { title, subtitle, description, images }
+
+  Work.create(newWork)
+    .then(workCreated => {
+      console.log(workCreated);
+      User.findByIdAndUpdate(req.user._id, {
+          $push: {
+            works: workCreated._id
+          }
+        })
+        .then(res.json(`/works/${workCreated._id}`))
+        //.then(res.redirect(`/works/${workCreated._id}`))
+        .catch(err => console.log(err))
+    })
+
+})
+// Not working yet
+
+
+/* Edit Work */
+router.get('/edit/:id', (req, res, next) => {
+  Work.findById(req.params.id)
+    .lean()
+    .then(work => {
+      res.json(work)
+      //res.render('works/edit-work', work)
+    })
+    .catch(err => console.log(err))
+});
+
+router.post('/edit/:id', (req, res, next) => {
+  console.log(req.body)
+  const { title, subtitle, description, images } = req.body;
+
+  let workToUpdate = { title, subtitle, description, images }
+  Work.findByIdAndUpdate(req.params.id, workToUpdate)
+    .then(() => console.log(req.params.id))
+    .then(() => res.json(`/works/${req.params.id}`))
+    //.then(() => res.redirect(`/works/${req.params.id}`))
+    .catch(err => console.log(err))
+})
 
 module.exports = router;
