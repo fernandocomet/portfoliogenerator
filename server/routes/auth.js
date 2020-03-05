@@ -4,101 +4,6 @@ const bcrypt = require('bcrypt');
 const User = require("../models/User");
 const passport = require('passport');
 
-/*
-router.get("/login", (req, res, next) => {
-  res.render("auth/login", { "message": req.flash("error") });
-});
-
-router.post("/login", passport.authenticate("local", {
-  successRedirect: "/home2",
-  failureRedirect: "/auth/login",
-  failureFlash: true,
-  passReqToCallback: true
-}));
-
-router.get("/signup", (req, res, next) => {
-  res.render("auth/signup");
-});
-
-router.post("/signup", (req, res, next) => {
-  const username = req.body.username;
-  const password = req.body.password;
-  if (username === "" || password === "") {
-    res.render("auth/signup", { message: "Indicate username and password" });
-    return;
-  }
-
-  User.findOne({ username }, "username", (err, user) => {
-    if (user !== null) {
-      res.render("auth/signup", { message: "The username already exists" });
-      return;
-    }
-
-    const salt = bcrypt.genSaltSync(bcryptSalt);
-    const hashPass = bcrypt.hashSync(password, salt);
-
-    const newUser = new User({
-      username,
-      password: hashPass
-    });
-
-    newUser.save()
-    .then(() => {
-      res.redirect("/");
-    })
-    .catch(err => {
-      res.render("auth/signup", { message: "Something went wrong" });
-    })
-  });
-});
-
-router.get("/logout", (req, res) => {
-  req.logout();
-  res.redirect("/");
-});
-
-/* GET home2 page - User logged in */
-router.get('/home2', (req, res, next) => {
-  res.render('home2');
-});
-
-
-
-///////////////Google Login
-router.get(
-  "/auth/google",
-  passport.authenticate("google", {
-    scope: [
-      "https://www.googleapis.com/auth/userinfo.profile",
-      "https://www.googleapis.com/auth/userinfo.email"
-    ]
-  })
-);
-
-router.get(
-  "/auth/google/callback",
-  passport.authenticate("google", {
-    successRedirect: "/home2",   
-    failureRedirect: "/"        // here you would redirect to the login page using traditional login approach
-  })
-);
-
-
-
-
-
-module.exports = router;
-
-
-/////////From Dani
-/*
-const express = require('express');
-const router  = express.Router();
-const bcrypt = require('bcrypt');
-const User = require('../models/User');
-const passport = require('passport');
-*/
-
 const login = (req, user) => {
   return new Promise((resolve,reject) => {
     req.login(user, err => {
@@ -181,3 +86,99 @@ router.use((err, req, res, next) => {
 })
 
 module.exports = router;
+
+
+/*
+router.get("/login", (req, res, next) => {
+  res.render("auth/login", { "message": req.flash("error") });
+});
+
+router.post("/login", passport.authenticate("local", {
+  successRedirect: "/home2",
+  failureRedirect: "/auth/login",
+  failureFlash: true,
+  passReqToCallback: true
+}));
+
+router.get("/signup", (req, res, next) => {
+  res.render("auth/signup");
+});
+
+router.post("/signup", (req, res, next) => {
+  const username = req.body.username;
+  const password = req.body.password;
+  if (username === "" || password === "") {
+    res.render("auth/signup", { message: "Indicate username and password" });
+    return;
+  }
+
+  User.findOne({ username }, "username", (err, user) => {
+    if (user !== null) {
+      res.render("auth/signup", { message: "The username already exists" });
+      return;
+    }
+
+    const salt = bcrypt.genSaltSync(bcryptSalt);
+    const hashPass = bcrypt.hashSync(password, salt);
+
+    const newUser = new User({
+      username,
+      password: hashPass
+    });
+
+    newUser.save()
+    .then(() => {
+      res.redirect("/");
+    })
+    .catch(err => {
+      res.render("auth/signup", { message: "Something went wrong" });
+    })
+  });
+});
+
+router.get("/logout", (req, res) => {
+  req.logout();
+  res.redirect("/");
+});
+
+/* GET home2 page - User logged in */
+// router.get('/home2', (req, res, next) => {
+//   res.render('home2');
+// });
+
+
+
+///////////////Google Login
+// router.get(
+//   "/auth/google",
+//   passport.authenticate("google", {
+//     scope: [
+//       "https://www.googleapis.com/auth/userinfo.profile",
+//       "https://www.googleapis.com/auth/userinfo.email"
+//     ]
+//   })
+// );
+
+// router.get(
+//   "/auth/google/callback",
+//   passport.authenticate("google", {
+//     successRedirect: "/home2",   
+//     failureRedirect: "/"        // here you would redirect to the login page using traditional login approach
+//   })
+// );
+
+
+
+
+
+// module.exports = router;
+
+
+/////////From Dani
+/*
+const express = require('express');
+const router  = express.Router();
+const bcrypt = require('bcrypt');
+const User = require('../models/User');
+const passport = require('passport');
+*/

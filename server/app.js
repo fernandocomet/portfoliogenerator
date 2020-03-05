@@ -96,8 +96,8 @@ app.use(cors(corsOptions));
 const index = require('./routes/index');
 app.use('/', index);
 
-const authRoutes = require('./routes/auth');
-app.use('/auth', authRoutes);
+// const authRoutes = require('./routes/auth');
+// app.use('/auth', authRoutes);
 
 const usersRoutes = require('./routes/users');
 app.use('/users', usersRoutes);
@@ -113,9 +113,8 @@ app.use('/works', workRoutes);
 mongoose.Promise = Promise;
 
 // Routes
-const router = require("./routes/auth");
-//const router = require("./routes/auth-routes");
-app.use('/api', router);
+const authRoutes = require("./routes/auth");
+app.use('/api/auth', authRoutes);
 
 
 /////////////////////////////////////// Google Auth
@@ -153,5 +152,8 @@ passport.use(
   )
 );
 
+app.use((req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
 
 module.exports = app;

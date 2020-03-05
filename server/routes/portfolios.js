@@ -50,7 +50,50 @@ router.get('/new', (req, res, next) => {
 })
 //This is ok at http://localhost:4000/portfolios/new
 
-
+/* Post to create new Portfolio */
+router.post('/new', (req, res, next) => {
+  const {
+      name,
+      description,
+      area,
+      difficulty,
+      length,
+    } = req.body
+  const imgUrl = req.file ? req.file.url : "";
+  
+  console.log(routeCoords)
+    const newRace = {
+      name,
+      description,
+      area,
+      difficulty,
+      length,
+      imgUrl,
+      startPoint: {
+        type: "Point",
+        coordinates: [req.body.lat, req.body.lng]
+      },
+      route: routeCoords
+    }
+  
+    Race.create(newRace)
+      .then(raceCreated => {
+        console.log(raceCreated);
+  
+        User.findByIdAndUpdate(req.user._id, {
+            $push: {
+              races: raceCreated._id
+            }
+          })
+          .then(res.redirect(`/races/${raceCreated._id}`))
+          //acceder al id de la race creada, y push al array. traer al array del req.user
+          .catch(err => console.log(err))
+  
+        // .then(userUpdated => res.json(userUpdated))
+  
+      })
+  
+  })
 
 
 
