@@ -73,8 +73,7 @@ router.post('/new', (req, res, next) => {
 
   Portfolio.create(newPortfolio)
     .then(portfolioCreated => {
-      console.log(portfolioCreated);
-      User.findByIdAndUpdate(req.user._id, {
+      User.findByIdAndUpdate('req.user._id', {
           $push: {
             portfolios: portfolioCreated._id
           }

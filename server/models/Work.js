@@ -6,7 +6,7 @@ const workSchema = new Schema(
     title: String,
     subtitle: String,
     description: String,
-    images: [{type: String}]
+    image: String
   },
   { timestamps: true }
 );

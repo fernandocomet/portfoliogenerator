@@ -18,9 +18,11 @@ const Portfolio = require("./models/Portfolio");
 const passport = require('passport');
 const cors = require('cors');
 
+// Heroku -> MONGODB_URL
+// Local -> MONGODB_LOCAL
 
 mongoose
-  .connect(`${process.env.MONGODB_URL}`, {useNewUrlParser: true})
+  .connect(`${process.env.MONGODB_LOCAL}`, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
