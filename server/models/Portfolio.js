@@ -6,6 +6,7 @@ const portfolioSchema = new Schema(
     alias: String,
     title: String,
     subtitle: String,
+    imagecover: String,
     works: [{ type: Schema.Types.ObjectId, ref: "Work" }]
   },
   { timestamps: true }

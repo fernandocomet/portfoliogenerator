@@ -193,6 +193,7 @@ let portfolios =
     alias: "fc_uxdesigner",
     title: "UX Designer",
     subtitle: "Several freelance projects in the area of UX Design",
+    imagecover: "https://source.unsplash.com/collection/1976082/400x225",
     works:[fc_uxdesigner1, fc_uxdesigner2, fc_uxdesigner3, fc_uxdesigner4, fc_uxdesigner5]
   },
   {
@@ -200,6 +201,7 @@ let portfolios =
     alias: "fc_photographer",
     title: "Photographer",
     subtitle: "A collection of my best works, some of them awarded",
+    imagecover: "https://source.unsplash.com/collection/1597792/400x225",
     works:[fc_photographer1, fc_photographer2, fc_photographer3, fc_photographer4, fc_photographer5]    
   },
   {
@@ -207,6 +209,7 @@ let portfolios =
     alias: "fc_animator",
     title: "Animator",
     subtitle: "Some of my best works in Display Advertising, using animation libraries as gsap, velocity, pixie or 5pjs. Showing advanced effects with text, svg filters, etc.",
+    imagecover: "https://source.unsplash.com/collection/1223439/400x225",
     works:[fc_animator1, fc_animator2, fc_animator3, fc_animator4, fc_animator5]   
   },
   {
@@ -214,6 +217,7 @@ let portfolios =
     alias: "fc_trendhunter",
     title: "Trendhunter",
     subtitle: "Some of my best works in Display Advertising, using animation libraries as gsap, velocity, pixie or 5pjs. Showing advanced effects with text, svg filters, etc.",
+    imagecover: "https://source.unsplash.com/collection/429524/400x225",
     works:[fc_trendhunter1, fc_trendhunter2, fc_trendhunter3, fc_trendhunter4, fc_trendhunter5]   
   },
   {
@@ -221,6 +225,7 @@ let portfolios =
     alias: "fc_writer",
     title: "Writer",
     subtitle: "Some of my best posts on Medium.",
+    imagecover: "https://source.unsplash.com/collection/1111575/400x225",
     works:[fc_writer1, fc_writer2, fc_writer3, fc_writer4, fc_writer5]   
   },
   {
@@ -228,6 +233,7 @@ let portfolios =
     alias: "ms_webdeveloper",
     title: "Web Developer",
     subtitle: "I just walked down the street on a rainy day, and told to myself: Code is poetry.",
+    imagecover: "https://source.unsplash.com/collection/1074434/400x225",
     works:[ms_webdeveloper1, ms_webdeveloper2, ms_webdeveloper3, ms_webdeveloper4, ms_webdeveloper5]   
   },
   {
@@ -235,6 +241,7 @@ let portfolios =
     alias: "ms_illustrator",
     title: "Illustration",
     subtitle: "Here my little drawings, some made freehand, others in acrylic, watercolor and oil. In them I represent the subrealism of the Murcian afternoon also know as `tardeo`.",
+    imagecover: "https://source.unsplash.com/collection/1346770/400x225",
     works:[ms_illustrator1, ms_illustrator2, ms_illustrator3, ms_illustrator4, ms_illustrator5]   
   },
   {
@@ -242,6 +249,7 @@ let portfolios =
     alias: "ms_designer",
     title: "Designer",
     subtitle: "Branding works for best projects.",
+    imagecover: "https://source.unsplash.com/collection/369/400x225", 
     works:[ms_designer1, ms_designer2, ms_designer3, ms_designer4, ms_designer5]   
   },
   {
@@ -249,6 +257,7 @@ let portfolios =
     alias: "rdb_uxdesigner",
     title: "UX Designer",
     subtitle: "Sketch - Design Thinking - Invision - Photoshop - Illustrator - Indesign.",
+    imagecover: "https://source.unsplash.com/collection/2276562/400x225", 
     works:[rdb_uxdesigner1, rdb_uxdesigner2, rdb_uxdesigner3, rdb_uxdesigner4, rdb_uxdesigner5]   
   },
   {
@@ -256,6 +265,7 @@ let portfolios =
     alias: "rdb_illustrator",
     title: "Illustrator",
     subtitle: "My best drawings.",
+    imagecover: "https://source.unsplash.com/collection/291422/400x225",
     works:[rdb_illustrator1, rdb_illustrator2, rdb_illustrator3, rdb_illustrator4, rdb_illustrator5]   
   },
   {
@@ -263,6 +273,7 @@ let portfolios =
     alias: "kol_webdesigner",
     title: "Web Designer",
     subtitle: "Development of Digital Experiences, Creativity, Design & Production. Brand of the Digital Designer Gabriel Guerrero.",
+    imagecover: "https://source.unsplash.com/collection/162213/400x225",
     works:[kol_webdesigner1, kol_webdesigner2, kol_webdesigner3, kol_webdesigner4, kol_webdesigner5]   
   },
   {
@@ -270,6 +281,7 @@ let portfolios =
     alias: "kol_mobile",
     title: "Mobile",
     subtitle: "Showing my best works in UI for Apps.",
+    imagecover: "https://source.unsplash.com/collection/827743/400x225",
     works:[kol_mobile1, kol_mobile2, kol_mobile3, kol_mobile4, kol_mobile5]   
   },
   {
@@ -277,6 +289,7 @@ let portfolios =
     alias: "kol_display",
     title: "Display",
     subtitle: "My best works for the Display Advertising Ad industry, featuring Rich Media projects, DCO and advanced banners.",
+    imagecover: "https://source.unsplash.com/collection/3582397/400x225",
     works:[kol_display1, kol_display2, kol_display3, kol_display4, kol_display5]   
   },
   {
@@ -284,6 +297,7 @@ let portfolios =
     alias: "misti_uxdesigner",
     title: "UX Designer",
     subtitle: "Research, Wireframing and prototyping focusing on the User Experience.",
+    imagecover: "https://source.unsplash.com/collection/1901880/400x225",
     works:[misti_uxdesigner1, misti_uxdesigner2, misti_uxdesigner3, misti_uxdesigner4, misti_uxdesigner5]   
   },
   {
@@ -291,6 +305,7 @@ let portfolios =
     alias: "misti_mobile",
     title: "Mobile Projects",
     subtitle: "A compilation of works for Apps and Responsive sites.",
+    imagecover: "https://source.unsplash.com/collection/1198107/400x225",
     works:[fc_photographer1, fc_photographer2, fc_photographer3, fc_photographer4, fc_photographer5]   
   }, 
   {
@@ -298,6 +313,7 @@ let portfolios =
     alias: "misti_prices",
     title: "Awards & Prices",
     subtitle: "Some of my best works awarded as a Creative Technologist.",
+    imagecover: "https://source.unsplash.com/collection/209138/400x225",
     works:[misti_prices1, misti_prices2, misti_prices3, misti_prices4, misti_prices5]   
   }                                              
 ];
@@ -876,6 +892,23 @@ let movements = []
 let transitions = [] 
 
 If needed, more Unsplash Collections here:
+https://source.unsplash.com/collection/209138/800x450
+https://source.unsplash.com/collection/1198107/800x450
+https://source.unsplash.com/collection/1901880/800x450
+https://source.unsplash.com/collection/3582397/800x450
+https://source.unsplash.com/collection/827743/800x450
+https://source.unsplash.com/collection/162213/800x450
+https://source.unsplash.com/collection/291422/800x450
+https://source.unsplash.com/collection/2276562/800x450    
+https://source.unsplash.com/collection/369/800x450
+https://source.unsplash.com/collection/1346770/800x450
+
+https://source.unsplash.com/collection/1074434/800x450
+https://source.unsplash.com/collection/1111575/800x450
+https://source.unsplash.com/collection/429524/800x450
+https://source.unsplash.com/collection/1223439/800x450
+https://source.unsplash.com/collection/1597792/800x450
+https://source.unsplash.com/collection/1976082/800x450
 https://unsplash.com/collections/852718/vibrant-blackouts-(oled)
 https://unsplash.com/collections/1911873/street-life-photowalk
 https://unsplash.com/collections/923267/colour
