@@ -9,6 +9,11 @@ import Signup from "./components/auth/Signup";
 import Login from "./components/auth/Login";
 import AuthService from "./components/auth/AuthService";
 import Contents from "./components/contents/Contents";
+import PortfolioList from "./components/portfolioList/PortfolioList";
+import WorkList from "./components/workList/WorkList";
+import Footer from "./components/footer/Footer";
+
+
 
 //App es la aplicación base, que se sirve del servicio AuthService para conectar con la bbdd
 class App extends Component {
@@ -19,8 +24,11 @@ class App extends Component {
     this.state = { loggedInUser: null };
     this.service = new AuthService();
 
-    this.fetchUser()
+    //this.fetchUser()
   }
+
+  componentDidUpdate = (prevProps, prevState) => console.log("El estado de App se ha actualizado:", this.state)
+  componentDidMount = () => this.fetchUser()
 
   getUser = userObj => {
     this.setState({
@@ -62,7 +70,12 @@ class App extends Component {
             <header className="App-header">
               <Navbar userInSession={this.state.loggedInUser} logout={this.logout} />
               {/* aqui simplemente se muestra un lorem ipsum genérico para que veáis contenidos que solo se muestran a usuarios logeados */}
-              <Contents />
+              <Contents /> 
+              <PortfolioList />
+              <WorkList />
+              <Footer />
+
+              
             </header>
           </div>
         </React.Fragment>
