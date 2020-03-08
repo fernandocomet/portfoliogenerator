@@ -41,6 +41,7 @@ class PortfolioList extends Component {
                     <p>CARGANDO...</p>
 
                 }
+                
         </div>
         );
     
