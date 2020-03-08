@@ -26,29 +26,32 @@ class Navbar extends Component {
       return (
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
-          <a className="navbar-brand" href="#">PortfolioGenerator</a>
+          <span className="navbar-brand" href="#">PortfolioGenerator</span>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                  {/* <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a> */}
+                  <Link to="/" className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Match</a>
+                  {/* <a className="nav-link" href="#">Match</a> */}
+                  <Link to="/match" className="nav-link">Match</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Portfolios</a>
+                  {/* <a className="nav-link" href="#">Portfolios</a> */}
+                  <Link to="/portfolios" className="nav-link">Portfolios</Link>
                 </li>
               </ul>
               <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                   <ul className="navbar-nav ml-auto">
                       <li className="nav-item">
-                          <a className="nav-link" href="#">{this.state.loggedInUser.username}</a>
+                          <span className="nav-link">{this.state.loggedInUser.username}</span>
                       </li>
                       <li className="nav-item">
-                          <a className="nav-link"><a onClick={this.handleLogout}>Logout</a></a>
+                          <span className="nav-link"><span onClick={this.handleLogout}>Logout</span></span>
                       </li>
                   </ul>
               </div>

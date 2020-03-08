@@ -12,6 +12,8 @@ import Contents from "./components/contents/Contents";
 import PortfolioList from "./components/portfolioList/PortfolioList";
 import WorkList from "./components/workList/WorkList";
 import Footer from "./components/footer/Footer";
+import Match from "./components/match/Match";
+import FinalPortfolios from "./components/FinalPortfolios/FinalPortfolios";
 
 
 
@@ -74,6 +76,11 @@ class App extends Component {
               <PortfolioList />
               <WorkList />
               <Footer />
+              <Switch>
+                <Route exact path="/home" component={App} />
+                <Route exact path="/match" component={Match} />
+                <Route exact path="/portfolios" component={FinalPortfolios} />
+              </Switch>
 
               
             </header>
