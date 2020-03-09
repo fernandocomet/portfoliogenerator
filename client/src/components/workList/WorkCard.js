@@ -9,7 +9,7 @@ const WorkCard = ({ title, imageUrl, _id }) => {
     return (
         <div>
         <div className="card text-white bg-dark mb-3 border border-white">
-            <img src="https://source.unsplash.com/collection/1976082/400x225" width="240px" className="card-img-top" alt="whatever"/>
+            <img src="https://source.unsplash.com/collection/420324/400x225" width="240px" className="card-img-top" alt="whatever"/>
             <div className="card-body">
                 <h5 className="card-title">Whatever</h5>
                 <p className="card-text">Some shootings taken while my travel to London.</p>

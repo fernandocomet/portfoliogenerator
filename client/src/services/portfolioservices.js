@@ -7,14 +7,22 @@ export default class Services {
       withCredentials: true
     });
   }
+//Route changed adding "/portfolios"
+
 
   //User
   getAllUsers = () =>
     this.service.get("/allusers").then(response => response.data);
   getUserDetail = () =>
     this.service.get("/user/:id").then(response => response.data);
-  getPortfoliosFromUser = (user_id) =>
-    this.service.get("/userportfolios", user_id).then(response => response.data);
+
+  getPortfoliosFromUser = (user_id) => 
+    this.service.get("/userportfolios", user_id)
+    //.then(response => response.data);
+    .then(response => {
+    console.log(response.data)
+    return response.data;
+})
     
   getWorksFromUser = () =>
     this.service.get("/userworks").then(response => response.data);

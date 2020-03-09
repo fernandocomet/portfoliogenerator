@@ -29,7 +29,7 @@ class App extends Component {
     //this.fetchUser()
   }
 
-  componentDidUpdate = (prevProps, prevState) => console.log("El estado de App se ha actualizado:", this.state)
+  componentDidUpdate = (prevProps, prevState) => console.log("App Updated:", this.state)
   componentDidMount = () => this.fetchUser()
 
   getUser = userObj => {
