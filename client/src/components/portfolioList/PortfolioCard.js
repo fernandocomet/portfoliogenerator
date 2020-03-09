@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "./PortfolioCard.css";
+import Button from 'react-bootstrap/Button';
 
-//import { Link } from './node_modules/react-router-dom'
+import { Link } from 'react-router-dom';
 
-const PortfolioCard = ({ alias, title, subtitle, imagecover}) => {
+
+const PortfolioCard = ({ _id, alias, title, subtitle, imagecover}) => {
     
   return (
        
@@ -12,7 +14,10 @@ const PortfolioCard = ({ alias, title, subtitle, imagecover}) => {
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{subtitle}</p>
-                    <button className="btn btn-light">See more</button>
+                    <p className="card-text">id = {_id}</p>
+                    <Button className="btn btn-light">
+                        <Link to={`/portfolio/${_id}`}>See more</Link>
+                    </Button>               
                 </div> 
         </div> 
    
@@ -20,8 +25,14 @@ const PortfolioCard = ({ alias, title, subtitle, imagecover}) => {
 };
 
 export default PortfolioCard;
-/*
 
+
+/*
+<button className="btn btn-light">See more</button>
+
+<Button as="div" variant="dark" size="sm">
+            <Link to={`/detalles/${_id}`}>See more</Link>
+</Button>
 Coming from my father:
 
             key={portfolio._id} 

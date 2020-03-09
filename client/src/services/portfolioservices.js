@@ -7,12 +7,7 @@ export default class Services {
       withCredentials: true
     });
   }
-  /*
-Route changed adding "/portfolios"
-So what I had as http://localhost:4000/portfolios/userportfolios
-is now http://localhost:4000/api/portfolios/userportfolios
-*/
-
+  
   //User
   getAllUsers = () =>
     this.service.get("/allusers").then(response => response.data);
@@ -25,6 +20,9 @@ is now http://localhost:4000/api/portfolios/userportfolios
       .then(response => response.data);
 
   //Portfolio
+  //postCoaster = coaster => this.service.post(`/new`, coaster).then(response => response.data)
+  createPortfolioPost = portfolio => this.service.post("/newportfolio", portfolio).then(response => response.data);
+
   getAllPortfolios = () =>
     this.service.get("/allportfolios").then(response => response.data);
   getPortfolioDetail = () =>
@@ -37,8 +35,8 @@ is now http://localhost:4000/api/portfolios/userportfolios
       .then(response => response.data);
   createPortfolioGet = () =>
     this.service.get("/newportfolio").then(response => response.data);
-  createPortfolioPost = () =>
-    this.service.post("/newportfolio").then(response => response.data);
+  //createPortfolioPost = () =>
+    //this.service.post("/newportfolio").then(response => response.data);
   editPortfolioToGet = () =>
     this.service.get("/portfolio/:id").then(response => response.data);
   editPortfolioToPost = () =>
@@ -48,3 +46,9 @@ is now http://localhost:4000/api/portfolios/userportfolios
       .post("/editportfoliocover/:id")
       .then(response => response.data);
 }
+
+/*
+Route changed adding "/portfolios"
+So what I had as http://localhost:4000/portfolios/userportfolios
+is now http://localhost:4000/api/portfolios/userportfolios
+*/

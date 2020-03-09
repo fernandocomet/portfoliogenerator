@@ -14,6 +14,7 @@ import WorkList from "./components/workList/WorkList";
 import Footer from "./components/footer/Footer";
 import Match from "./components/match/Match";
 import FinalPortfolios from "./components/FinalPortfolios/FinalPortfolios";
+import PortfolioDetails from "./components/portfolioDetails/PortfolioDetails"
 
 
 
@@ -71,16 +72,16 @@ class App extends Component {
           <div className="App">
             <header className="App-header">
               <Navbar userInSession={this.state.loggedInUser} logout={this.logout} />
-              {/* aqui simplemente se muestra un lorem ipsum genérico para que veáis contenidos que solo se muestran a usuarios logeados */}
               <Contents /> 
               <PortfolioList userData={this.state.loggedInUser} />
               <WorkList userData={this.state.loggedInUser} />
               <Footer />
-              {/* <Switch>  //Warning State/ComponentDidMount
-                <Route exact path="/home" component={App} />
+              <Switch>  
+                <Route path="/portfolio/:id" render={props => <PortfolioDetails {...props} />} />
+                {/* <Route exact path="/home" component={App} />
                 <Route exact path="/match" component={Match} />
-                <Route exact path="/portfolios" component={FinalPortfolios} />
-              </Switch> */}
+                <Route exact path="/portfolios" component={FinalPortfolios} />  */}
+              </Switch>
 
               
             </header>
@@ -110,3 +111,24 @@ class App extends Component {
 }
 
 export default App;
+
+  /*
+  render() {
+
+    return (
+      <>
+        <NavBar setTheUser={this.setTheUser} loggedInUser={this.state.loggedInUser} />
+
+        <Switch>
+          <Route exact path="/" render={() => <CoastersList loggedInUser={this.state.loggedInUser} />} />
+          <Route path="/portfolio/:id" render={props => <PortfolioDetails {...props} />} />
+          <Route path="/signup" render={() => <Signup setTheUser={this.setTheUser} />} />
+          <Route path="/login" render={props => <Login setTheUser={this.setTheUser} {...props} />} />
+          <Route path="/profile" render={() => this.state.loggedInUser ? <Profile loggedInUser={this.state.loggedInUser} /> : <Redirect to="/" />} />
+        </Switch>
+      </>
+
+    )
+  }
+
+*/
