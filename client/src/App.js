@@ -64,7 +64,6 @@ class App extends Component {
   render() {
     //aqui hacemos rendering condicional dependiendo de si tenemos un usuario logeado o no
     if (this.state.loggedInUser) {
-      //en este caso mostramos los contenidos ya que hay usuario
       return (
         <React.Fragment>
           <Redirect to="/home" />
@@ -72,17 +71,26 @@ class App extends Component {
           <div className="App">
             <header className="App-header">
               <Navbar userInSession={this.state.loggedInUser} logout={this.logout} />
-              <Contents /> 
-              <PortfolioList userData={this.state.loggedInUser} />
-              <WorkList userData={this.state.loggedInUser} />
-              <Footer />
               <Switch>  
                 <Route path="/portfolio/:id" render={props => <PortfolioDetails {...props} />} />
-                {/* <Route exact path="/home" component={App} />
-                <Route exact path="/match" component={Match} />
-                <Route exact path="/portfolios" component={FinalPortfolios} />  */}
+                {/* <Route path="/home" render={props => <Contents {...props} />} /> */}
+                {/* <Route exact path="/home" component={App} />*/}
+                <Route exact path="/match" render={props => <Match {...props} />} />
+                <Route exact path="/portfolios" component={FinalPortfolios} />  
+                <Route path="/home" render={props => 
+                  <>
+                    <PortfolioList userData={this.state.loggedInUser} />
+                    <WorkList userData={this.state.loggedInUser} /> 
+                  </>
+                }
+                  />
               </Switch>
+              <Contents /> 
+               {/* <PortfolioList userData={this.state.loggedInUser} />
+               <WorkList userData={this.state.loggedInUser} />  */}
+              
 
+              <Footer />
               
             </header>
           </div>
@@ -100,7 +108,6 @@ class App extends Component {
               <Switch>
                 <Route exact path="/signup" render={() => <Signup getUser={this.getUser} />} />
                 <Route exact path="/login" render={() => <Login getUser={this.getUser} />} />
-                {/* Log in with Google? */}
               </Switch>
             </header>
           </div>
@@ -112,23 +119,4 @@ class App extends Component {
 
 export default App;
 
-  /*
-  render() {
-
-    return (
-      <>
-        <NavBar setTheUser={this.setTheUser} loggedInUser={this.state.loggedInUser} />
-
-        <Switch>
-          <Route exact path="/" render={() => <CoastersList loggedInUser={this.state.loggedInUser} />} />
-          <Route path="/portfolio/:id" render={props => <PortfolioDetails {...props} />} />
-          <Route path="/signup" render={() => <Signup setTheUser={this.setTheUser} />} />
-          <Route path="/login" render={props => <Login setTheUser={this.setTheUser} {...props} />} />
-          <Route path="/profile" render={() => this.state.loggedInUser ? <Profile loggedInUser={this.state.loggedInUser} /> : <Redirect to="/" />} />
-        </Switch>
-      </>
-
-    )
-  }
-
-*/
+ 

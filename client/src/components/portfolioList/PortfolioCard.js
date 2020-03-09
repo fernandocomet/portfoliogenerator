@@ -16,7 +16,10 @@ const PortfolioCard = ({ _id, alias, title, subtitle, imagecover}) => {
                     <p className="card-text">{subtitle}</p>
                     <p className="card-text">id = {_id}</p>
                     <Button className="btn btn-light">
-                        <Link to={`/portfolio/${_id}`}>See more</Link>
+                        <Link to={{
+                            pathname: `/portfolio/${_id}`,
+                            state: {_id:_id, alias:alias, title:title, subtitle:subtitle, imagecover:imagecover}
+                          }}>See more</Link>
                     </Button>               
                 </div> 
         </div> 
@@ -28,22 +31,10 @@ export default PortfolioCard;
 
 
 /*
-<button className="btn btn-light">See more</button>
-
-<Button as="div" variant="dark" size="sm">
-            <Link to={`/detalles/${_id}`}>See more</Link>
-</Button>
 Coming from my father:
-
             key={portfolio._id} 
             alias={portfolio.alias}  
             title={portfolio.title}
             subtitle={portfolio.subtitle}
             imagecover={portfolio.imagecover}
-
-De Portfolio necesito:
-"alias": "fc_uxdesigner",
-"title": "UX Designer",
-"subtitle": "Several freelance projects in the area of UX Design",
-"imagecover": "maximo.jpg",
 */

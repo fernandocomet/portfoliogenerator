@@ -4,7 +4,6 @@ import Portfolioservices from "../../services/portfolioservices";
 import PortfolioCard from "./PortfolioCard";
 import AddPortfolio from "./AddPortfolio";
 import "./PortfolioList.css";
-import PortfolioForm from "../portfolioForm/PortfolioForm";
 
 import Modal from 'react-bootstrap/Modal'
 
@@ -57,9 +56,9 @@ class PortfolioList extends Component {
         )}
         <Modal show={this.state.showmodal} onHide={this.closeModal}>
                     <Modal.Body>
-                        <h3>Add New Portfolio</h3>
+                        <h3>Nueva montaña rusa</h3>
                         <hr></hr>
-                        <PortfolioForm closeModal={this.closeModal} refreshList={this.getPortfoliosFromUser} />
+                        {/* <CoasterForm closeModal={this.closeModal} refreshList={this.getAllCoasters} /> */}
                     </Modal.Body>
         </Modal>
         </div>
