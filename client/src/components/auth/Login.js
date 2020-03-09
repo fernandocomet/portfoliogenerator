@@ -6,7 +6,7 @@ import AuthService from './AuthService'
 class Login extends Component {
   constructor(props) {
     super(props);
-    this.state = { username: '', password: '' };
+    this.state = { username: 'fernandocomet', password: 'fernandocomet' };
     this.service = new AuthService();
   }
 

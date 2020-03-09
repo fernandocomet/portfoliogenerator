@@ -22,7 +22,7 @@ const cors = require('cors');
 // Local -> MONGODB_LOCAL
 
 mongoose
-  .connect(`${process.env.MONGODB_LOCAL}`, {useNewUrlParser: true})
+  .connect(`mongodb://localhost/portfoliogenerator`, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -105,7 +105,7 @@ const usersRoutes = require('./routes/users');
 app.use('/users', usersRoutes);
 
 const portfolioRoutes = require('./routes/portfolios');
-app.use('/portfolios', portfolioRoutes);
+app.use('/api/portfolios', portfolioRoutes);
 
 const workRoutes = require('./routes/works');
 app.use('/works', workRoutes);

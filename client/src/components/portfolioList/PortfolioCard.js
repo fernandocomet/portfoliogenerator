@@ -21,4 +21,10 @@ const PortfolioCard = ({ title, imageUrl, _id }) => {
 }
 
 export default PortfolioCard
-// style="width: 18rem"
+/*
+De Portfolio necesito:
+"alias": "fc_uxdesigner",
+"title": "UX Designer",
+"subtitle": "Several freelance projects in the area of UX Design",
+"imagecover": "maximo.jpg",
+*/

@@ -73,14 +73,14 @@ class App extends Component {
               <Navbar userInSession={this.state.loggedInUser} logout={this.logout} />
               {/* aqui simplemente se muestra un lorem ipsum genérico para que veáis contenidos que solo se muestran a usuarios logeados */}
               <Contents /> 
-              <PortfolioList />
+              <PortfolioList userData={this.state.loggedInUser} />
               <WorkList />
               <Footer />
-              <Switch>
+              {/* <Switch>  //Warning State/ComponentDidMount
                 <Route exact path="/home" component={App} />
                 <Route exact path="/match" component={Match} />
                 <Route exact path="/portfolios" component={FinalPortfolios} />
-              </Switch>
+              </Switch> */}
 
               
             </header>

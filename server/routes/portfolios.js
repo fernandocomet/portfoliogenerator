@@ -39,7 +39,8 @@ router.get("/userportfolios", (req, res, next) => {
   User.findById(req.user._id)
     .populate("portfolios")
     .then(userPortfolios => {
-      res.json(userPortfolios.portfolios);
+      // console.log(userPortfolios.portfolios)
+      res.json(userPortfolios.portfolios);  
     });
 });
 //This is ok at http://localhost:4000/portfolios/userportfolios //Must be logged in
