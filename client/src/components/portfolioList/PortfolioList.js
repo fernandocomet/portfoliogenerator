@@ -37,7 +37,13 @@ class PortfolioList extends Component {
 
         {this.state.portfolios.length ? (
           this.state.portfolios.map(portfolio => (
-            <PortfolioCard key={portfolio._id} alias={portfolio.alias} />
+            <PortfolioCard
+              key={portfolio._id}
+              alias={portfolio.alias}
+              title={portfolio.title}
+              subtitle={portfolio.subtitle}
+              imagecover={portfolio.imagecover}
+            />
           ))
         ) : (
           <p>CARGANDO...</p>

@@ -7,7 +7,11 @@ export default class Services {
       withCredentials: true
     });
   }
-//Route changed adding "/portfolios"
+/*
+Route changed adding "/portfolios"
+So what I had as http://localhost:4000/portfolios/userportfolios
+is now http://localhost:4000/api/portfolios/userportfolios
+*/
 
 
   //User
@@ -29,11 +33,7 @@ export default class Services {
 
   //Portfolio
   getAllPortfolios = () =>
-    this.service.get("/allportfolios").then(response => {
-      console.log("hola getAllPortfolios");
-      console.log(response.data);
-      return response.data;
-    });
+    this.service.get("/allportfolios").then(response => response.data);
   getPortfolioDetail = () =>
     this.service.get("/portfolio/:id").then(response => response.data);
   getPortfolioWorks = () =>

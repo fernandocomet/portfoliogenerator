@@ -3,25 +3,36 @@ import "./PortfolioCard.css";
 
 //import { Link } from './node_modules/react-router-dom'
 
-const PortfolioCard = ({ alias}) => {
+const PortfolioCard = ({ alias, title, subtitle, imagecover}) => {
   return (
     <div>
-      {alias}
-      {title}
-      {/* <div className="card text-white bg-dark mb-3 border border-white">
-                <img src="https://source.unsplash.com/collection/1976082/400x225" width="240px" className="card-img-top" alt="whatever"/>
+      
+       <div className="card text-white bg-dark mb-3 border border-white">
+                <img src={imagecover} width="240px" className="card-img-top" alt="whatever"/>
                 <div className="card-body">
-                    <h5 className="card-title">Photographer</h5>
-                    <p className="card-text">Some shootings taken while my travel to London.</p>
+                    <h5 className="card-title">{title}</h5>
+                    <p className="card-text">{subtitle}</p>
                     <button className="btn btn-light">See more</button>
                 </div> 
-            </div> */}
+            </div> 
     </div>
   );
 };
 
 export default PortfolioCard;
-/*
+/*{alias}
+      {title}
+      {subtitle}
+      {imagecover}
+
+Coming from my father:
+
+            key={portfolio._id} 
+            alias={portfolio.alias}  
+            title={portfolio.title}
+            subtitle={portfolio.subtitle}
+            imagecover={portfolio.imagecover}
+
 De Portfolio necesito:
 "alias": "fc_uxdesigner",
 "title": "UX Designer",
