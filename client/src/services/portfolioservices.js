@@ -7,12 +7,11 @@ export default class Services {
       withCredentials: true
     });
   }
-/*
+  /*
 Route changed adding "/portfolios"
 So what I had as http://localhost:4000/portfolios/userportfolios
 is now http://localhost:4000/api/portfolios/userportfolios
 */
-
 
   //User
   getAllUsers = () =>
@@ -20,16 +19,10 @@ is now http://localhost:4000/api/portfolios/userportfolios
   getUserDetail = () =>
     this.service.get("/user/:id").then(response => response.data);
 
-  getPortfoliosFromUser = (user_id) => 
-    this.service.get("/userportfolios", user_id)
-    //.then(response => response.data);
-    .then(response => {
-    console.log(response.data)
-    return response.data;
-})
-    
-  getWorksFromUser = () =>
-    this.service.get("/userworks").then(response => response.data);
+  getPortfoliosFromUser = user_id =>
+    this.service
+      .get("/userportfolios", user_id)
+      .then(response => response.data);
 
   //Portfolio
   getAllPortfolios = () =>
@@ -54,26 +47,4 @@ is now http://localhost:4000/api/portfolios/userportfolios
     this.service
       .post("/editportfoliocover/:id")
       .then(response => response.data);
-
-  //Work
-  getAllWorks = () =>
-    this.service.get("/allworks").then(response => response.data);
-  getWorkDetail = () =>
-    this.service.get("/work/:id").then(response => response.data);
-  deleteWork = () =>
-    this.service.delete("/work/delete/:id").then(response => response.data);
-  createWorkGet = () =>
-    this.service.get("/newwork").then(response => response.data);
-  createWorkPost = () =>
-    this.service.post("/newwork").then(response => response.data);
-  editWorkToGet = () =>
-    this.service.get("/editwork/:id").then(response => response.data);
-  editWorkToPost = () =>
-    this.service.post("/editwork/:id").then(response => response.data);
-
-  //Image
-  deleteWorkImage = () =>
-    this.service.delete("/deleteImageWork/:id").then(response => response.data);
-  createImageWork = () =>
-    this.service.post("/uploadImageWork/:id").then(response => response.data);
 }

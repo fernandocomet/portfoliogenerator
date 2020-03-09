@@ -1,49 +1,62 @@
-import React, { Component } from 'react';
-//import React, { Component } from './node_modules/react';
+import React, { Component } from "react";
 
-import Portfolioservices from "../../services/portfolioservices"
-import WorkCard from "../workList/WorkCard"
-import AddWork from "../workList/AddWork"
+import Workservices from "../../services/workservices";
+import WorkCard from "./WorkCard";
+import AddWork from "./WorkCard";
+import "./WorkList.css";
 
 class WorkList extends Component {
-
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
-      works: []
-    }
-    this.services = new Portfolioservices();
+      works: [],
+      userId: this.props.userData._id
+    };
+    this.services = new Workservices();
+    console.log(this.props.userData);
   }
 
-  /*componentDidMount = () => this.getWorksFromUser();
+  componentDidMount = () => {
+    this.getWorksFromUser();
+  };
 
   getWorksFromUser = () => {
-    this.services.getWorksFromUser()
-        .then(allWorks => this.setState({ works : allWorks}))
-        .catch(err => console.log(err))
-        //console.log(works)  => Not defined????
-  }*/
+    this.services
+      .getWorksFromUser(this.state.userId)
+      .then(allWorks => {
+        return this.setState({
+          works: allWorks
+        });
+      })
+      .catch(err => console.log(err));
+  };
 
 
   render() {
-    return (
-        <div className="container">
-            <h1>Works</h1>
-            {/* {this.props.loggedInUser && <AddWork></AddWork>}
-                {this.state.works.length ? (
-                    <div>
-                        <WorkCard></WorkCard>
-                         {this.state.works.map(work => <WorkCard key={work._id} {...work} />)} 
-                    </div>
-                )
-                    :
-                    <p>CARGANDO...</p>
 
-                } */}
+    return (
+      <div>
+        <h1>Works</h1>
+        <div className="container">
+        {this.state.works.length ? (
+          this.state.works.map(work => (
+            <WorkCard
+              key={work._id}
+              title={work.title}
+              subtitle={work.subtitle}
+              description={work.description}       
+              image={work.image}
+            />
+          ))
+        ) : (
+          <p>CARGANDO...</p>
+        )}
         </div>
-        );
-    
+      </div>
+    );
   }
 }
+
+
 
 export default WorkList;

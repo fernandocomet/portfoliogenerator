@@ -74,7 +74,7 @@ class App extends Component {
               {/* aqui simplemente se muestra un lorem ipsum genérico para que veáis contenidos que solo se muestran a usuarios logeados */}
               <Contents /> 
               <PortfolioList userData={this.state.loggedInUser} />
-              <WorkList />
+              <WorkList userData={this.state.loggedInUser} />
               <Footer />
               {/* <Switch>  //Warning State/ComponentDidMount
                 <Route exact path="/home" component={App} />

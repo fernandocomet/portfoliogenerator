@@ -32,9 +32,9 @@ class PortfolioList extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <h1>Portfolios</h1>
-
+        <div className="container">
         {this.state.portfolios.length ? (
           this.state.portfolios.map(portfolio => (
             <PortfolioCard
@@ -48,6 +48,7 @@ class PortfolioList extends Component {
         ) : (
           <p>CARGANDO...</p>
         )}
+        </div>
       </div>
     );
   }

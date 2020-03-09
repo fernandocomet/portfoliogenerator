@@ -4,9 +4,9 @@ import "./PortfolioCard.css";
 //import { Link } from './node_modules/react-router-dom'
 
 const PortfolioCard = ({ alias, title, subtitle, imagecover}) => {
+    
   return (
-    <div>
-      
+       
        <div className="card text-white bg-dark mb-3 border border-white">
                 <img src={imagecover} width="240px" className="card-img-top" alt="whatever"/>
                 <div className="card-body">
@@ -14,16 +14,13 @@ const PortfolioCard = ({ alias, title, subtitle, imagecover}) => {
                     <p className="card-text">{subtitle}</p>
                     <button className="btn btn-light">See more</button>
                 </div> 
-            </div> 
-    </div>
+        </div> 
+   
   );
 };
 
 export default PortfolioCard;
-/*{alias}
-      {title}
-      {subtitle}
-      {imagecover}
+/*
 
 Coming from my father:
 
