@@ -16,6 +16,7 @@ import Match from "./components/match/Match";
 import FinalPortfolios from "./components/FinalPortfolios/FinalPortfolios";
 import PortfolioDetails from "./components/portfolioDetails/PortfolioDetails";
 import CreatePortfolio from "./components/portfolioForm/CreatePortfolio";
+import EditPortfolio from "./components/portfolioForm/EditPortfolio";
 
 
 
@@ -75,6 +76,7 @@ class App extends Component {
               <Switch>  
                 <Route path="/portfolio/:id" render={props => <PortfolioDetails {...props} />} />
                 <Route path="/newportfolio" render={props => <CreatePortfolio {...props} />} />
+                <Route path="/editportfolio/:id" render={props => <EditPortfolio {...props} />} />
 
                 {/* <Route path="/home" render={props => <Contents {...props} />} /> */}
                 {/* <Route exact path="/home" component={App} />*/}
