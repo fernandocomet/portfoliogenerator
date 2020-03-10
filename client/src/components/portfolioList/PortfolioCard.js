@@ -14,16 +14,12 @@ const PortfolioCard = ({ _id, alias, title, subtitle, imagecover}) => {
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{subtitle}</p>
-                    <p className="card-text">id = {_id}</p>
-                    <Button className="btn btn-light">
-                        <Link to={{
-                            pathname: `/portfolio/${_id}`,
-                            state: {_id:_id, alias:alias, title:title, subtitle:subtitle, imagecover:imagecover}
-                          }}>See more</Link>
-                    </Button>               
+                    {/* <p className="card-text">id = {_id}</p> */}
+                    <button className="btn btn-light">
+                        <Link to={{pathname: `/portfolio/${_id}`}}>See more</Link>
+                    </button>               
                 </div> 
         </div> 
-   
   );
 };
 

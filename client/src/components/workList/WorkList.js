@@ -13,7 +13,7 @@ class WorkList extends Component {
       userId: this.props.userData._id
     };
     this.services = new Workservices();
-    console.log(this.props.userData);
+    //console.log(this.props.userData);
   }
 
   componentDidMount = () => {

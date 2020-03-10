@@ -25,8 +25,12 @@ export default class Services {
 
   getAllPortfolios = () =>
     this.service.get("/allportfolios").then(response => response.data);
-  getPortfolioDetail = () =>
-    this.service.get("/portfolio/:id").then(response => response.data);
+
+  // getPortfolioDetail = id =>
+  //   this.service.get("/portfolio/:id").then(response => response.data);
+
+  getPortfolioDetail = id => this.service.get(`/portfolio/${id}`).then(response => response.data)  
+
   getPortfolioWorks = () =>
     this.service.get("/portfolio/:id/works").then(response => response.data);
   deletePortfolio = () =>
@@ -35,12 +39,15 @@ export default class Services {
       .then(response => response.data);
   createPortfolioGet = () =>
     this.service.get("/newportfolio").then(response => response.data);
+    
   //createPortfolioPost = () =>
     //this.service.post("/newportfolio").then(response => response.data);
   editPortfolioToGet = () =>
     this.service.get("/portfolio/:id").then(response => response.data);
+
   editPortfolioToPost = () =>
     this.service.post("/editportfolio/:id").then(response => response.data);
+    
   editPortfolioCover = () =>
     this.service
       .post("/editportfoliocover/:id")

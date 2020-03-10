@@ -97,4 +97,7 @@ app.use("/api/portfolios", portfolioRoutes);
 const workRoutes = require("./routes/works");
 app.use("/works", workRoutes);
 
+const fileRoutes = require("./routes/files");
+app.use('/files', fileRoutes);
+
 module.exports = app;

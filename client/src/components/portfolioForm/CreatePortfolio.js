@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button'
 
 import FilesServices from '../../services/fileservices'
 
-class PortfolioForm extends Component {
+class CreatePortfolio extends Component {
 
     constructor(props) {
         super(props)
@@ -25,11 +25,11 @@ class PortfolioForm extends Component {
     }
 
     finishAction = () => {
-        this.props.closeModal()
+        //this.props.closeModal()
         this.props.refreshList()
     }
 
-    createPortfolioPost = () => {   //ESTE FALTA 
+    createPortfolioPost = () => {   
         this.portfolioServices.createPortfolioPost(this.state.portfolio)
             .then(() => this.finishAction())
             .catch(err => console.log(err))
@@ -44,7 +44,7 @@ class PortfolioForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        this.createPortfolioPost()  //ESTE FALTA
+        this.createPortfolioPost() 
     }
 
     handleFileUpload = e => {
@@ -66,7 +66,7 @@ class PortfolioForm extends Component {
             <Form onSubmit={this.handleSubmit}>
                 <Form.Group>
                     <Form.Label>Alias</Form.Label>
-                    <Form.Control type="text" name="alias" value={this.state.portfolio.length} onChange={this.handleChange} />
+                    <Form.Control type="text" name="alias" value={this.state.portfolio.alias} onChange={this.handleChange} />
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>Título</Form.Label>
@@ -88,4 +88,4 @@ class PortfolioForm extends Component {
     }
 }
 
-export default PortfolioForm
+export default CreatePortfolio

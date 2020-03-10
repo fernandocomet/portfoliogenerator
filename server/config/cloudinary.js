@@ -1,5 +1,5 @@
-// config/ cloudinary.js
-/*
+
+
 //remember, we have to import multer-storage-cloudinary in order to work with cloudinary
 //remember to create an account in cloudinary
 //then you'll need the cloud name, the cloudinary key and the secret
@@ -19,12 +19,11 @@ var storage = cloudinaryStorage({
   cloudinary: cloudinary,
   folder: 'folder-name', // The name of the folder in cloudinary
   allowedFormats: ['jpg', 'png'],
-  //remember you can create your custom filename pattern
   filename: function (req, file, cb) {
-    cb(null, file.originalname); // The file on cloudinary would have the same name as the original file name
+    cb(null, file.originalname); 
   }
 });
 
 const uploadCloud = multer({ storage: storage });
 
-module.exports = uploadCloud;*/
+module.exports = uploadCloud;

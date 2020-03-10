@@ -40,11 +40,13 @@ class PortfolioList extends Component {
     return (
       <div>
         <h1>Portfolios</h1>
+        <AddPortfolio></AddPortfolio>
         <div className="container">
         {this.state.portfolios.length ? (
           this.state.portfolios.map(portfolio => (
             <PortfolioCard
               _id={portfolio._id}
+              key={portfolio._id}
               alias={portfolio.alias}
               title={portfolio.title}
               subtitle={portfolio.subtitle}
@@ -56,7 +58,7 @@ class PortfolioList extends Component {
         )}
         <Modal show={this.state.showmodal} onHide={this.closeModal}>
                     <Modal.Body>
-                        <h3>Nueva montaña rusa</h3>
+                        <h3>New Portfolio</h3>
                         <hr></hr>
                         {/* <CoasterForm closeModal={this.closeModal} refreshList={this.getAllCoasters} /> */}
                     </Modal.Body>

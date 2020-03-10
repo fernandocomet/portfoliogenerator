@@ -14,7 +14,8 @@ import WorkList from "./components/workList/WorkList";
 import Footer from "./components/footer/Footer";
 import Match from "./components/match/Match";
 import FinalPortfolios from "./components/FinalPortfolios/FinalPortfolios";
-import PortfolioDetails from "./components/portfolioDetails/PortfolioDetails"
+import PortfolioDetails from "./components/portfolioDetails/PortfolioDetails";
+import CreatePortfolio from "./components/portfolioForm/CreatePortfolio";
 
 
 
@@ -73,6 +74,8 @@ class App extends Component {
               <Navbar userInSession={this.state.loggedInUser} logout={this.logout} />
               <Switch>  
                 <Route path="/portfolio/:id" render={props => <PortfolioDetails {...props} />} />
+                <Route path="/newportfolio" render={props => <CreatePortfolio {...props} />} />
+
                 {/* <Route path="/home" render={props => <Contents {...props} />} /> */}
                 {/* <Route exact path="/home" component={App} />*/}
                 <Route exact path="/match" render={props => <Match {...props} />} />

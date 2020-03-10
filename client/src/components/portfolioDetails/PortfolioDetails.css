@@ -1,0 +1,18 @@
+.cardDetail{
+    padding-top: 10px;
+}
+
+.carding{
+    width: 30rem;   
+    /* height: 20rem; */
+    text-align: left;
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+.btn{
+    text-align: right;
+    padding-left: 20px;
+}
