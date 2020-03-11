@@ -75,13 +75,13 @@ class PortfolioList extends Component {
           ) : (
             <p>CARGANDO...</p>
           )}
-          <Modal show={this.state.showmodal} onHide={this.closeModal}>
+          {/* <Modal show={this.state.showmodal} onHide={this.closeModal}>
             <Modal.Body>
               <h3>New Portfolio</h3>
               <hr></hr>
-              {/* <CoasterForm closeModal={this.closeModal} refreshList={this.getAllCoasters} /> */}
+              {/* <CoasterForm closeModal={this.closeModal} refreshList={this.getAllCoasters} /> 
             </Modal.Body>
-          </Modal>
+          </Modal> */}
         </div>
       </div>
     );

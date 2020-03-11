@@ -80,7 +80,7 @@ class App extends Component {
 
                 {/* <Route path="/home" render={props => <Contents {...props} />} /> */}
                 {/* <Route exact path="/home" component={App} />*/}
-                <Route exact path="/match" render={props => <Match {...props} />} />
+                <Route exact path="/match" render={props => <Match userData={this.state.loggedInUser} />} />
                 <Route exact path="/portfolios" component={FinalPortfolios} />  
                 <Route path="/home" render={props => 
                   <>

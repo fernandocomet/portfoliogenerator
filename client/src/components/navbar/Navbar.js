@@ -32,7 +32,7 @@ class Navbar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
               <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
+                <li className="nav-item">
                   {/* <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a> */}
                   <Link to="/home" className="nav-link">Home</Link>
                 </li>

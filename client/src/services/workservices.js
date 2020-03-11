@@ -11,8 +11,8 @@ export default class Services {
   //Work
   getWorksFromUser = user_id =>
     this.service
-    .get("/userworks", user_id)
-    .then(response => response.data);
+      .get("/userworks", user_id)
+      .then(response => response.data);
 
   getAllWorks = () =>
     this.service.get("/allworks").then(response => response.data);
