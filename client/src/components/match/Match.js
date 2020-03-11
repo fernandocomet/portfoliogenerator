@@ -10,7 +10,9 @@ class Match extends Component {
     this.state = {
       portfolios: [],
       works: [],
-      userId: this.props.userData._id
+      portfolioWorks:[], 
+      userId: this.props.userData._id,
+      portfolioId: this.props.userData._id
     }
     this.services = new Portfolioservices();
     this.workservices = new Workservices();
@@ -45,17 +47,30 @@ class Match extends Component {
           .catch(err => console.log(err));
   }
 
+  getPortfolioWorks = () => {
+      console.log(this.state.portfolioId)
+      this.services
+        .getPortfolioWorks(this.state.portfolioId)
+        .then(allPortfolioWorks => {
+            return this.setState({
+              portfolioWorks: allPortfolioWorks
+            });
+          })
+          .catch(err => console.log(err));
+  }
+
+ 
 
   render() {
     return (
-        <div className="container">
-            
+        <div className="container">      
             <div className="portfolios">
                 <h2>Portfolios</h2>
                 {
                     this.state.portfolios.map(portfolio => (
                        <ul className="list-group">
                             <li className="list-group-item list-group-item-dark">{portfolio.title}</li>
+                            {/* <li className="list-group-item list-group-item-dark" onClick={event => this.getPortfolioWorks(this.state.portfolioId)}>{portfolio.title}</li> */}
                         </ul>
                     ))
                 }

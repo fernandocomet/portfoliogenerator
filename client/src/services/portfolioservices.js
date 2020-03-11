@@ -35,8 +35,11 @@ export default class Services {
   getPortfolioDetail = id =>
     this.service.get(`/portfolio/${id}`).then(response => response.data);
 
-  getPortfolioWorks = () =>
-    this.service.get("/portfolio/:id/works").then(response => response.data);
+  getPortfolioWorks = id =>
+    this.service.get(`/portfolio/${id}/works`).then(response => response.data);
+
+  // getPortfolioWorks = () =>
+  //   this.service.get("/portfolio/:id/works").then(response => response.data);
 
   deletePortfolio = id =>
     this.service

@@ -27,10 +27,12 @@ class CreatePortfolio extends Component {
     finishAction = () => {
         //this.props.closeModal()
         this.props.refreshList()
+        
     }
 
     createPortfolioPost = () => {   
-        this.portfolioServices.createPortfolioPost(this.state.portfolio)
+        this.portfolioServices
+            .createPortfolioPost(this.state.portfolio)
             .then(() => this.finishAction())
             .catch(err => console.log(err))
     }

@@ -20,12 +20,12 @@ const passport = require("passport");
 // Local -> MONGODB_LOCAL  -> .connect(`${process.env.MONGODB_LOCAL}`,
 
 //Aquí 
-const { MONGODB_LOCAL } = process.env;
+const { MONGODB_URL } = process.env;
 mongoose.Promise = Promise;
 mongoose
-  .connect(MONGODB_LOCAL)
+  .connect(MONGODB_URL)
   .then(() => {
-    console.log(`Connected to Mongo on ${MONGODB_LOCAL}`);
+    console.log(`Connected to Mongo on ${MONGODB_URL}`);
   })
   .catch(err => {
     console.error("Error connecting to mongo", err);

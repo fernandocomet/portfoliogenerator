@@ -56,7 +56,7 @@ class PortfolioList extends Component {
     return (
       <div>
         <h1>Portfolios</h1>
-        <AddPortfolio></AddPortfolio>
+        
         <div className="container">
           {this.state.portfolios.length ? (
             this.state.portfolios.map(portfolio => (
@@ -83,6 +83,7 @@ class PortfolioList extends Component {
             </Modal.Body>
           </Modal> */}
         </div>
+        <AddPortfolio refreshList={this.getPortfoliosFromUser}/>
       </div>
     );
   }
