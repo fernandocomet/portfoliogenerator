@@ -16,10 +16,19 @@ export default class Services {
 
   getAllWorks = () =>
     this.service.get("/allworks").then(response => response.data);
-  getWorkDetail = () =>
-    this.service.get("/work/:id").then(response => response.data);
-  deleteWork = () =>
-    this.service.delete("/work/delete/:id").then(response => response.data);
+   
+
+  getWorkDetail = id =>
+    this.service.get(`/work/${id}`).then(response => response.data);
+
+  deleteWork = id =>
+    this.service
+      .delete(`/work/delete/${id}`)
+      .then(response => response.data);  
+
+  // deleteWork = () =>
+  //   this.service.delete("/work/delete/:id").then(response => response.data);
+
   createWorkGet = () =>
     this.service.get("/newwork").then(response => response.data);
   createWorkPost = () =>

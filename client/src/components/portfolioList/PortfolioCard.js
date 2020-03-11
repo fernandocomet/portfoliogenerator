@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./PortfolioCard.css";
-import Button from "react-bootstrap/Button";
 
 import { Link } from "react-router-dom";
 
@@ -29,7 +28,6 @@ const PortfolioCard = ({
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text2">{subtitle}</p>
-        {/* <p className="card-text">id = {_id}</p> */}
         <button className="btn btn-light">
           <Link to={{ pathname: `/portfolio/${_id}` }}>See more</Link>
         </button>

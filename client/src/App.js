@@ -15,6 +15,7 @@ import Footer from "./components/footer/Footer";
 import Match from "./components/match/Match";
 import FinalPortfolios from "./components/FinalPortfolios/FinalPortfolios";
 import PortfolioDetails from "./components/portfolioDetails/PortfolioDetails";
+import WorkDetails from "./components/workDetails/WorkDetails";
 import CreatePortfolio from "./components/portfolioForm/CreatePortfolio";
 import EditPortfolio from "./components/portfolioForm/EditPortfolio";
 import 'reset-css';
@@ -78,6 +79,9 @@ class App extends Component {
                 <Route path="/portfolio/:id" render={props => <PortfolioDetails {...props} />} />
                 <Route path="/newportfolio" render={props => <CreatePortfolio {...props} />} />
                 <Route path="/editportfolio/:id" render={props => <EditPortfolio {...props} />} />
+
+                <Route path="/work/:id" render={props => <WorkDetails {...props} />} />
+                {/* <Route path="/editwork/:id" render={props => <EditWork {...props} />} /> */}
 
                 {/* <Route path="/home" render={props => <Contents {...props} />} /> */}
                 {/* <Route exact path="/home" component={App} />*/}

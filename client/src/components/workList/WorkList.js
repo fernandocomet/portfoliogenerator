@@ -13,7 +13,6 @@ class WorkList extends Component {
       userId: this.props.userData._id
     };
     this.services = new Workservices();
-    //console.log(this.props.userData);
   }
 
   componentDidMount = () => {
@@ -31,21 +30,41 @@ class WorkList extends Component {
       .catch(err => console.log(err));
   };
 
+  deleteWork = work_id => {
+    let workId = work_id._id;
+    this.services
+      .deleteWork(workId)
+      .then(() => this.updateWork())
+      .catch(err => console.log(err));
+  };
+
+  updateWork = () => {
+    this.services
+      .getWorksFromUser(this.state.userId)
+      .then(works => this.setState({ works: works }))
+      .catch(err => console.log(err));
+  };
+
 
   render() {
-
+    // console.log(this.state.works);
     return (
       <div id="content">
         <h1>Works</h1>
+
         <div className="containerList">
         {this.state.works.length ? (
           this.state.works.map(work => (
             <WorkCard
+              _id={work._id}
               key={work._id}
               title={work.title}
               subtitle={work.subtitle}
               description={work.description}       
               image={work.image}
+              deleteWork={work_id =>
+                  this.deleteWork(work_id)
+              }
             />
           ))
         ) : (

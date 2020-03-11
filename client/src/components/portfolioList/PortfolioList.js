@@ -11,8 +11,7 @@ class PortfolioList extends Component {
     super(props);
     this.state = {
       portfolios: [],
-      userId: this.props.userData._id,
-      showmodal: false
+      userId: this.props.userData._id
     };
     this.services = new Portfolioservices();
   }
@@ -50,7 +49,7 @@ class PortfolioList extends Component {
 
 
   render() {
-    console.log(this.state.portfolios);
+    // console.log(this.state.portfolios);
     return (
       <div id="content">
         <h1>Portfolios</h1>

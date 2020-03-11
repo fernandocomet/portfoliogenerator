@@ -1,48 +1,49 @@
 import React, { Component } from "react";
-import "./PortfolioDetails.css";
-import Button from "react-bootstrap/Button";
-import Portfolioservices from "../../services/portfolioservices";
+//import "./PortfolioDetails.css";
+
+import Workservices from "../../services/workservices";
 
 import { Link } from "react-router-dom";
 
-class PortfolioDetails extends Component {
+class WorkDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      portfolio: null
+      work: null
     };
-    this.services = new Portfolioservices();
+    this.services = new Workservices();
   }
 
   componentDidMount = () => {
-    this.getPortfolioDetail();
+    this.getWorkDetail();
   };
 
-  getPortfolioDetail = () => {
+  getWorkDetail = () => {
     this.services
-      .getPortfolioDetail(this.props.match.params.id)
-      .then(theportfolio => this.setState({ portfolio: theportfolio }))
+      .getWorkDetail(this.props.match.params.id)
+      .then(thework => this.setState({ work: thework }))
       .catch(err => console.log(err));
   };
 
   render() {
     return (
       <div className="cardDetail">
-        {this.state.portfolio ? (
-          //console.log(this.state.portfolio)
+        {this.state.work ? (
+         
+         
           <div className="carding text-white bg-dark mb-3 border border-white">
             <img
-              src={this.state.portfolio.imagecover}
+              src={this.state.work.image}
               className="card-img-top"
               alt="whatever"
             />
             <div className="card-body">
-              <h5 className="card-title">{this.state.portfolio.title}</h5>
-              <p className="card-text">{this.state.portfolio.subtitle}</p>
+              <h5 className="card-title">{this.state.work.title}</h5>
+              <p className="card-text">{this.state.work.subtitle}</p>
               <button className="btn btn-light">
                 <Link
                   to={{
-                    pathname: `/editportfolio/${this.state.portfolio._id}`
+                     pathname: `/editwork/${this.state.work._id}`
                   }}
                 >
                   Edit
@@ -50,15 +51,15 @@ class PortfolioDetails extends Component {
               </button>
               {/* <button className="btn btn-light" onClick={() => this.deletePortfolio(this.state.portfolio._id)}>Delete</button> */}
               {/* <Button className="btn btn-light">Delete</Button>*/}
-            </div>
+            </div> 
           </div>
         ) : (
-          console.log(this.state.portfolio)
+          console.log(this.state.work)
         )}
       </div>
     );
   }
 }
 
-export default PortfolioDetails;
+export default WorkDetails;
 
