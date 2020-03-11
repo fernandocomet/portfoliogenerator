@@ -17,6 +17,7 @@ import FinalPortfolios from "./components/FinalPortfolios/FinalPortfolios";
 import PortfolioDetails from "./components/portfolioDetails/PortfolioDetails";
 import CreatePortfolio from "./components/portfolioForm/CreatePortfolio";
 import EditPortfolio from "./components/portfolioForm/EditPortfolio";
+import 'reset-css';
 
 
 

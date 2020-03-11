@@ -35,9 +35,9 @@ class WorkList extends Component {
   render() {
 
     return (
-      <div>
+      <div id="content">
         <h1>Works</h1>
-        <div className="container">
+        <div className="containerList">
         {this.state.works.length ? (
           this.state.works.map(work => (
             <WorkCard

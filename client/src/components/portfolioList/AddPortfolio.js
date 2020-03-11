@@ -9,7 +9,7 @@ const AddPortfolio = () => {
     
   return (
        
-       <div className="card text-white bg-dark mb-3 border border-white">
+       <div className="card2 text-white bg-dark mb-3 border border-white">
                 <img src="https://source.unsplash.com/collection/429524/800x450" width="240px" className="card-img-top" alt="whatever"/>
                 <div className="card-body">
                     <h5 className="card-title">Create a new Portfolio</h5>

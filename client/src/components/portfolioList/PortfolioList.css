@@ -1,13 +1,16 @@
 h1{
+	margin: "100px";
     text-align: left;
 }
 
-.container{
+.containerList{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: flex-start;
-    align-content: stretch;
-    padding-right: 20px;
+	align-items: center;
+	align-content: flex-start;
+	margin: "100px";
+	padding: 0;
 }
+

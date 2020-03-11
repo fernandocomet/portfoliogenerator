@@ -1,10 +1,13 @@
-.card{
-    width: 18rem;   
-    height: 20rem;
+.card2{
+    width: 15rem;   
+    height: 19rem;
     text-align: left;
-    
 }
 
-.card-text{
-    font-size: 20px;
+.card-text2{
+    font-size: 12px;
+}
+
+button {
+    color: black;
 }

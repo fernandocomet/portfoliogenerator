@@ -5,7 +5,6 @@ import PortfolioCard from "./PortfolioCard";
 import AddPortfolio from "./AddPortfolio";
 import "./PortfolioList.css";
 
-import Modal from "react-bootstrap/Modal";
 
 class PortfolioList extends Component {
   constructor(props) {
@@ -48,16 +47,15 @@ class PortfolioList extends Component {
       .catch(err => console.log(err));
   };
 
-  closeModal = () => this.setState({ showmodal: false });
-  openModal = () => this.setState({ showmodal: true });
+
 
   render() {
     console.log(this.state.portfolios);
     return (
-      <div>
+      <div id="content">
         <h1>Portfolios</h1>
         
-        <div className="container">
+        <div className="containerList">
           {this.state.portfolios.length ? (
             this.state.portfolios.map(portfolio => (
               <PortfolioCard
@@ -75,13 +73,6 @@ class PortfolioList extends Component {
           ) : (
             <p>CARGANDO...</p>
           )}
-          {/* <Modal show={this.state.showmodal} onHide={this.closeModal}>
-            <Modal.Body>
-              <h3>New Portfolio</h3>
-              <hr></hr>
-              {/* <CoasterForm closeModal={this.closeModal} refreshList={this.getAllCoasters} /> 
-            </Modal.Body>
-          </Modal> */}
         </div>
         <AddPortfolio refreshList={this.getPortfoliosFromUser}/>
       </div>

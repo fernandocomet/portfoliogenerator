@@ -6,11 +6,11 @@ import './WorkCard.css'
 const WorkCard = ({ title, subtitle, description, image }) => {
     return (
         <div>
-        <div className="card text-white bg-dark mb-3 border border-white">
+        <div className="card2 text-white bg-dark mb-3 border border-white">
             <img src={image} width="240px" className="card-img-top" alt="whatever"/>
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
-                <p className="card-text">{subtitle}</p>
+                <p className="card-text2">{subtitle}</p>
                 <button className="btn btn-light">See more</button>
             </div> 
         </div>

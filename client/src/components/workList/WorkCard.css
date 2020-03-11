@@ -1,6 +1,9 @@
-.card{
-    width: 18rem;
-    height: 25rem;
+.card2{
+    width: 15rem;   
+    height: 19rem;
     text-align: left;
-    
+}
+
+.card-text2{
+    font-size: 12px;
 }
