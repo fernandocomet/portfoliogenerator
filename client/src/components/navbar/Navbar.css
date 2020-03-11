@@ -11,9 +11,14 @@
 .header{
 	display: flex;
 	flex-direction: column;
+	
 }
 
 ul{
 	list-style-type: none;
 	text-align: right;
+}
+
+.nav-link{
+	font-size: 20px;
 }

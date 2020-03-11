@@ -18,6 +18,8 @@ import PortfolioDetails from "./components/portfolioDetails/PortfolioDetails";
 import WorkDetails from "./components/workDetails/WorkDetails";
 import CreatePortfolio from "./components/portfolioForm/CreatePortfolio";
 import EditPortfolio from "./components/portfolioForm/EditPortfolio";
+import CreateWork from "./components/workForm/CreateWork";
+import EditWork from "./components/workForm/EditWork";
 import 'reset-css';
 
 
@@ -81,6 +83,8 @@ class App extends Component {
                 <Route path="/editportfolio/:id" render={props => <EditPortfolio {...props} />} />
 
                 <Route path="/work/:id" render={props => <WorkDetails {...props} />} />
+                <Route path="/newwork" render={props => <CreateWork {...props} />} />
+                <Route path="/editwork/:id" render={props => <EditWork {...props} />} />
                 {/* <Route path="/editwork/:id" render={props => <EditWork {...props} />} /> */}
 
                 {/* <Route path="/home" render={props => <Contents {...props} />} /> */}

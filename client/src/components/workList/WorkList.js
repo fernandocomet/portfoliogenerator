@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Workservices from "../../services/workservices";
 import WorkCard from "./WorkCard";
-import AddWork from "./WorkCard";
+import AddWork from "./AddWork";
 import "./WorkList.css";
 
 class WorkList extends Component {
@@ -51,7 +51,7 @@ class WorkList extends Component {
     return (
       <div id="content">
         <h1>Works</h1>
-
+        
         <div className="containerList">
         {this.state.works.length ? (
           this.state.works.map(work => (
@@ -71,6 +71,7 @@ class WorkList extends Component {
           <p>CARGANDO...</p>
         )}
         </div>
+        <AddWork refreshList={this.getWorksFromUser}/>
       </div>
     );
   }

@@ -18,8 +18,6 @@ class Match extends Component {
     this.workservices = new Workservices();
   }
 
-
-
   componentDidMount = () => {
       this.getPortfoliosFromUser();
       this.getWorksFromUser();
@@ -69,18 +67,23 @@ class Match extends Component {
                 {
                     this.state.portfolios.map(portfolio => (
                        <ul className="list-group">
-                            <li className="list-group-item list-group-item-dark">{portfolio.title}</li>
-                            {/* <li className="list-group-item list-group-item-dark" onClick={event => this.getPortfolioWorks(this.state.portfolioId)}>{portfolio.title}</li> */}
+                            <button type="button" class="list-group-item list-group-item-action" onClick={event =>console.log("Click!")}> {portfolio.title} </button>
+                            {/*<li className="list-group-item list-group-item-dark">{portfolio.title}</li>
+                             <li className="list-group-item list-group-item-dark" onClick={event => this.getPortfolioWorks(this.state.portfolioId)}>{portfolio.title}</li> 
+                             
+                              onClick={event => _handleClick(event)}
+                             */}
                         </ul>
                     ))
                 }
             </div>  
             <div className="works">
-                <h2>Works</h2>
+                <h2>All Works</h2>
                 {
                     this.state.works.map(work => (
                        <ul className="list-group">
-                            <li className="list-group-item list-group-item-dark">{work.title}</li>
+                            <button type="button" class="list-group-item list-group-item-action "> {work.title} </button>
+                            {/* <li className="list-group-item list-group-item-dark">{work.title}</li> */}
                         </ul>
                     ))
                 }
@@ -92,3 +95,20 @@ class Match extends Component {
 }
 
 export default Match;
+/*
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">{portfolio.title} </a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+    </div>
+  </div>
+</div>
+*/

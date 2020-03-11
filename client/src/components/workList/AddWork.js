@@ -1,29 +1,27 @@
+import React, { Component } from "react";
+import "./WorkCard.css";
+import Button from 'react-bootstrap/Button';
 
-import React, { Component } from 'react';
-
-import Portfolioservices from "../../services/portfolioservices"
-
-class AddWork extends Component {
-
-    constructor(props){
-      super(props)
-      this.state = {
-       //Do Ï really need State here?
-      }
-      this.services = new Portfolioservices();
-    }
+import { Link } from 'react-router-dom';
 
 
-  
-    render() {
-      return (
-          <div>
-              <h1>Add Work Button</h1>
-          </div>
-          );
-      
-    }
-  }
-  
-  export default AddWork
-  
+const AddWork = () => {
+    
+  return (
+       
+       <div className="card2 text-white bg-dark mb-3 border border-white">
+                <img src="https://source.unsplash.com/collection/429524/800x450" width="240px" className="card-img-top" alt="whatever"/>
+                <div className="card-body">
+                    <h5 className="card-title">Create a new Work</h5>
+                    <p className="card-text"></p>
+                    {/* <p className="card-text">id = {_id}</p> */}
+                    <button className="btn btn-light">
+                        <Link to={{pathname: `/newwork`}}>Create now</Link>
+                    </button>               
+                </div> 
+        </div> 
+  );
+};
+
+export default AddWork;
+

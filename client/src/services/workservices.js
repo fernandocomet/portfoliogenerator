@@ -31,8 +31,12 @@ export default class Services {
 
   createWorkGet = () =>
     this.service.get("/newwork").then(response => response.data);
-  createWorkPost = () =>
-    this.service.post("/newwork").then(response => response.data);
+
+  createWorkPost = work =>
+    this.service
+    .post("/newwork", work)
+    .then(response => response.data);
+
   editWorkToGet = () =>
     this.service.get("/editwork/:id").then(response => response.data);
   editWorkToPost = () =>
