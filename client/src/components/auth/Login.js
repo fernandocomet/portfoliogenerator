@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import AuthService from './AuthService'
+import AuthService from './AuthService';
+import "./login.css";
 
 class Login extends Component {
   constructor(props) {
@@ -41,17 +42,18 @@ class Login extends Component {
 
   render() {
 
-    return (<div>
-      <h3>Please, login to our site</h3>
+    return (<div className="login">
+      <span className="megatitle">Portfolio Generator</span>
+      <span className="megasubtitle">Create multiple portfolios at once. If you are a web designer, an illustrator and a photographer, now you can have a portfolio for each one of your profiles. It is easy and fast. We have big achievements in the job market using our tool. </span>
 
       <form onSubmit={this.handleFormSubmit}>
         <fieldset>
-          <label>Username:</label>
+          <label>Username: </label>
           <input type="text" name="username" value={this.state.username} onChange={e => this.handleChange(e)} />
         </fieldset>
 
         <fieldset>
-          <label>Password:</label>
+          <label>Password: </label>
           <input type="password" name="password" value={this.state.password} onChange={e => this.handleChange(e)} />
         </fieldset>
 

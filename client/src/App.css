@@ -44,3 +44,7 @@ fieldset {
     transform: rotate(360deg);
   }
 }
+
+.tolog{
+  text-align: right;
+}

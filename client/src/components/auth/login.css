@@ -1,0 +1,29 @@
+
+.login{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.megatitle{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 100px;
+    color: #2699FB;
+}
+
+.megasubtitle{
+    margin: 0, auto;
+    font-size: 36px;
+    color: #2699FB;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+fieldset{
+    color: #2699FB;
+
+}

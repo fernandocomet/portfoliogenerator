@@ -134,8 +134,10 @@ class App extends Component {
             <header className="App-header">
               <Navbar userInSession={this.state.loggedInUser} logout={this.logout} />
               <Switch>
-                <Route exact path="/signup" render={() => <Signup getUser={this.getUser} />} />
-                <Route exact path="/login" render={() => <Login getUser={this.getUser} />} />
+                <div className="tolog">
+                   <Route exact path="/signup" render={() => <Signup getUser={this.getUser} />} />
+                   <Route exact path="/login" render={() => <Login getUser={this.getUser} />} />
+                </div>
               </Switch>
             </header>
           </div>
