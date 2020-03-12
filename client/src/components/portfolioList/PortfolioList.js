@@ -43,6 +43,7 @@ class PortfolioList extends Component {
     this.services
       .getPortfoliosFromUser(this.state.userId)
       .then(portfolios => this.setState({ portfolios: portfolios }))
+      .then(() => this.props.updatePortfolio()) 
       .catch(err => console.log(err));
   };
 

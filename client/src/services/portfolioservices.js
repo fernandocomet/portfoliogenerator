@@ -36,7 +36,11 @@ export default class Services {
     this.service.get(`/portfolio/${id}`).then(response => response.data);
 
   getPortfolioWorks = id =>
-    this.service.get(`/portfolio/${id}/works`).then(response => response.data);
+    this.service.get(`/portfolio/${id}/works`).then(response => {
+      console.log("getPortfolioWorks")
+      console.log(id)
+      return response.data
+    });
 
   // getPortfolioWorks = () =>
   //   this.service.get("/portfolio/:id/works").then(response => response.data);

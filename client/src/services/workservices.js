@@ -21,11 +21,11 @@ export default class Services {
   getWorkDetail = id =>
     this.service.get(`/work/${id}`).then(response => response.data);
 
-  deleteWork = id =>
+  deleteWork = id => {
     this.service
       .delete(`/work/delete/${id}`)
       .then(response => response.data);  
-
+  }
   // deleteWork = () =>
   //   this.service.delete("/work/delete/:id").then(response => response.data);
 

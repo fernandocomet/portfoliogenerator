@@ -11,26 +11,32 @@ class Match extends Component {
       portfolios: [],
       works: [],
       portfolioworks:[], 
-      userId: this.props.userData._id,
-      portfolioId: this.props.userData._id
+      userId: this.props.userData._id
     }
     this.services = new Portfolioservices();
     this.workservices = new Workservices();
   }
 
+  /* era
+  userId: this.props.userData._id,
+  portfolioId: this.props.userData._id */
+
   componentDidMount = () => {
       this.getPortfoliosFromUser();
       this.getWorksFromUser();
-      this.getPortfolioWorks();
+      this.setState({
+        portfolio : this.props.portfolioData
+      })
   }
 
   getPortfoliosFromUser = () => {
-    console.log("userId = " + this.state.userId) 
+    //console.log("userId = " + this.state.userId) 
     this.services
-        .getPortfoliosFromUser(this.state.userId)
+        .getPortfoliosFromUser()
         .then(allPortfolios => {
             return this.setState({
               portfolios: allPortfolios
+              //userId : _id  //No reconoce el _id
             });
           })
           .catch(err => console.log(err));
@@ -38,7 +44,7 @@ class Match extends Component {
 
   getWorksFromUser = () => {
     this.workservices
-        .getWorksFromUser(this.state.userId)
+        .getWorksFromUser()
         .then(allWorks => {
             return this.setState({
               works: allWorks
@@ -47,11 +53,12 @@ class Match extends Component {
           .catch(err => console.log(err));
   }
 
-  getPortfolioWorks = () => {
-      console.log("portfolioId = " + this.state.portfolioId)  //CUIDADO ES el id del User, lo confunde con el de Portfolio porque le paso lo mismo
+  getPortfolioWorks = (e, portfolioId) => {
+    e.preventDefault();
       this.services
-        .getPortfolioWorks(this.state.portfolioId)
+        .getPortfolioWorks(portfolioId)
         .then(allportfolioworks => {
+          console.log(allportfolioworks)
             return this.setState({
               portfolioworks: allportfolioworks
             });
@@ -70,7 +77,7 @@ class Match extends Component {
                 {
                     this.state.portfolios.map(portfolio => (
                        <ul className="list-group">
-                            <button type="button" className="list-group-item list-group-item-action"  onClick={event => console.log("Click!")}> {portfolio.title} {portfolio._id} </button>
+                            <button type="button" className="list-group-item list-group-item-action"  onClick={(e) => this.getPortfolioWorks(e, portfolio._id)}> {portfolio.title} {portfolio._id} </button>
                             {/*<li className="list-group-item list-group-item-dark">{portfolio.title}</li>  onClick={event => this.getPortfolioWorks(portfolio._id)}
                              <li className="list-group-item list-group-item-dark" onClick={event => this.getPortfolioWorks(this.state.portfolioId)}>{portfolio.title}</li> 
                              
@@ -85,7 +92,7 @@ class Match extends Component {
                 {
                     this.state.works.map(work => (
                        <ul className="list-group">
-                            <button type="button" className="list-group-item list-group-item-action "> {work.title} {work._id} </button>
+                            <li type="button" className="list-group-item list-group-item-action "> {work.title} {work._id} </li>
                             {/* <li className="list-group-item list-group-item-dark">{work.title}</li> */}
                         </ul>
                     ))
@@ -96,7 +103,7 @@ class Match extends Component {
                 {
                     this.state.portfolioworks.map(portfoliowork => (
                        <ul className="list-group">
-                            <button type="button" className="list-group-item list-group-item-action "> {portfoliowork.title} hola </button>
+                            <li type="button" className="list-group-item list-group-item-action "> {portfoliowork._id} hola </li>
                             {/* <li className="list-group-item list-group-item-dark">{work.title}</li> */}
                         </ul>
                     ))

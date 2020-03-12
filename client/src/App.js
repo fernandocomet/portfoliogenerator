@@ -20,6 +20,7 @@ import CreatePortfolio from "./components/portfolioForm/CreatePortfolio";
 import EditPortfolio from "./components/portfolioForm/EditPortfolio";
 import CreateWork from "./components/workForm/CreateWork";
 import EditWork from "./components/workForm/EditWork";
+import Portfolioservices from "./services/portfolioservices";
 import 'reset-css';
 
 
@@ -30,8 +31,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     //arrancamos el estado con un valor de loggedInUser con nada (luego lo vamos a reemplazar con el valor real)
-    this.state = { loggedInUser: null };
-    this.service = new AuthService();
+    this.state = { 
+      loggedInUser: null,
+      portfolios:null
+    }
+    this.service = new AuthService()
+    this.services = new Portfolioservices()
+   
 
     //this.fetchUser()
   }
@@ -67,6 +73,14 @@ class App extends Component {
       });
   }
 
+  updatePortfolio = (event) => {
+    event.preventDefault()
+    this.services
+      .getPortfoliosFromUser(this.state.loggedInUser._id)
+      .then(portfolios => this.setState({ portfolios: portfolios }))
+      .catch(err => console.log(err));
+  };
+
   render() {
     //aqui hacemos rendering condicional dependiendo de si tenemos un usuario logeado o no
     if (this.state.loggedInUser) {
@@ -89,11 +103,11 @@ class App extends Component {
 
                 {/* <Route path="/home" render={props => <Contents {...props} />} /> */}
                 {/* <Route exact path="/home" component={App} />*/}
-                <Route exact path="/match" render={props => <Match userData={this.state.loggedInUser} />} />
+                <Route exact path="/match" render={props => <Match userData={this.state.loggedInUser} portfolioData={this.state.portfolios} />} />
                 <Route exact path="/portfolios" component={FinalPortfolios} />  
                 <Route path="/home" render={props => 
                   <>
-                    <PortfolioList userData={this.state.loggedInUser} />
+                    <PortfolioList userData={this.state.loggedInUser} updatePortfolio={(event) => this.updatePortfolio(event)} />
                     <WorkList userData={this.state.loggedInUser} /> 
                   </>
                 }

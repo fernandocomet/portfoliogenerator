@@ -30,19 +30,30 @@ class WorkList extends Component {
       .catch(err => console.log(err));
   };
 
-  deleteWork = work_id => {
+  /*deleteWork = (idWork, idPortfolio) => {
+    this.service
+      .delete(`/work/delete/${idWork/idPortfolio}`)
+      .then(response => response.data);  
+  }*/
+
+  deleteWork = (work_id) => {
     let workId = work_id._id;
     this.services
       .deleteWork(workId)
-      .then(() => this.updateWork())
-      .catch(err => console.log(err));
+      setTimeout(() => {
+        return this.updateWork()
+      }, 1000);
+      
   };
 
   updateWork = () => {
     this.services
       .getWorksFromUser(this.state.userId)
-      .then(works => this.setState({ works: works }))
-      .catch(err => console.log(err));
+      .then(works => {
+        console.log(works)
+        return this.setState({ works: works })}
+        )
+      // .catch(err => console.log(err));
   };
 
 
