@@ -684,14 +684,14 @@ let works = [
     title: "ms_webdeveloper2",
     subtitle: "MERN: Javasdript based technologies: Mongo DB, Express JS, React JS/ Redux and Node JS.",
     description: "Release strategy research & development infographic handshake ownership market business-to-consumer incubator angel investor funding. Interaction design channels partner network termsheet conversion analytics A/B testing monetization growth hacking iPad crowdsource return on investment. Partner network assets direct mailing termsheet gen-z startup metrics. Traction burn rate branding crowdfunding facebook client. Business model canvas pivot agile development niche market ramen client analytics monetization growth hacking burn rate innovator focus advisor success. Venture mass market user experience value proposition stock direct mailing market iPad. Series A financing innovator scrum project incubator responsive web design churn rate A/B testing monetization marketing influencer. Hypotheses A/B testing business plan technology startup churn rate creative buyer angel investor infrastructure accelerator. Facebook research & development business model canvas funding entrepreneur incubator crowdfunding ownership gen-z deployment MVP. Business-to-business churn rate partnership ramen stock virality seed round equity.",
-    image: "https://source.unsplash.com/collection/1074434/800x450"
+    image: "https://source.unsplash.com/collection/531563/800x450"
   },
   {
     _id: ms_webdeveloper3,
     title: "ms_webdeveloper3",
     subtitle: "MERN: Javasdript based technologies: Mongo DB, Express JS, React JS/ Redux and Node JS.",
     description: "Release strategy research & development infographic handshake ownership market business-to-consumer incubator angel investor funding. Interaction design channels partner network termsheet conversion analytics A/B testing monetization growth hacking iPad crowdsource return on investment. Partner network assets direct mailing termsheet gen-z startup metrics. Traction burn rate branding crowdfunding facebook client. Business model canvas pivot agile development niche market ramen client analytics monetization growth hacking burn rate innovator focus advisor success. Venture mass market user experience value proposition stock direct mailing market iPad. Series A financing innovator scrum project incubator responsive web design churn rate A/B testing monetization marketing influencer. Hypotheses A/B testing business plan technology startup churn rate creative buyer angel investor infrastructure accelerator. Facebook research & development business model canvas funding entrepreneur incubator crowdfunding ownership gen-z deployment MVP. Business-to-business churn rate partnership ramen stock virality seed round equity.",
-    image: "https://source.unsplash.com/collection/1074434/800x450",
+    image: "https://source.unsplash.com/collection/162326/800x450",
   },
   {
     _id: ms_webdeveloper4,
@@ -705,182 +705,182 @@ let works = [
     title: "ms_webdeveloper5",
     subtitle: "MERN: Javasdript based technologies: Mongo DB, Express JS, React JS/ Redux and Node JS.",
     description: "Release strategy research & development infographic handshake ownership market business-to-consumer incubator angel investor funding. Interaction design channels partner network termsheet conversion analytics A/B testing monetization growth hacking iPad crowdsource return on investment. Partner network assets direct mailing termsheet gen-z startup metrics. Traction burn rate branding crowdfunding facebook client. Business model canvas pivot agile development niche market ramen client analytics monetization growth hacking burn rate innovator focus advisor success. Venture mass market user experience value proposition stock direct mailing market iPad. Series A financing innovator scrum project incubator responsive web design churn rate A/B testing monetization marketing influencer. Hypotheses A/B testing business plan technology startup churn rate creative buyer angel investor infrastructure accelerator. Facebook research & development business model canvas funding entrepreneur incubator crowdfunding ownership gen-z deployment MVP. Business-to-business churn rate partnership ramen stock virality seed round equity.",
-    image: "https://source.unsplash.com/collection/1074434/800x450"
+    image: "https://source.unsplash.com/collection/1198107/800x450"
   },
   {
     _id: fc_writer1,
     title: "fc_writer1",
     subtitle: "A collection for my best posts on Medium",
-    description: "Interaction design hackathon conversion. Incubator founders investor traction gen-z direct mailing android strategy network effects value proposition. Hackathon accelerator deployment founders. IPhone ecosystem monetization market seed round deployment release. Partner network freemium long tail social proof termsheet early adopters user experience. Advisor prototype success A/B testing market non-disclosure agreement buzz infrastructure incubator funding buyer freemium venture. Infographic advisor analytics buzz research & development influencer entrepreneur crowdsource graphical user interface gamification deployment MVP stealth paradigm shift. Scrum project assets release beta market MVP. Gen-z success graphical user interface bootstrapping assets partnership bandwidth handshake business-to-consumer equity. Investor first mover advantage direct mailing A/B testing launch party funding influencer hackathon client beta virality market stealth long tail.",
-    image: "https://source.unsplash.com/collection/1111575/800x450"
+    description: "IPhone ecosystem monetization market seed round deployment release.",
+    image: "https://source.unsplash.com/collection/8469893/800x450"
   },
   {
     _id: fc_writer2,
     title: "fc_writer2",
     subtitle: "A collection for my best posts on Medium",
-    description: "Interaction design hackathon conversion. Incubator founders investor traction gen-z direct mailing android strategy network effects value proposition. Hackathon accelerator deployment founders. IPhone ecosystem monetization market seed round deployment release. Partner network freemium long tail social proof termsheet early adopters user experience. Advisor prototype success A/B testing market non-disclosure agreement buzz infrastructure incubator funding buyer freemium venture. Infographic advisor analytics buzz research & development influencer entrepreneur crowdsource graphical user interface gamification deployment MVP stealth paradigm shift. Scrum project assets release beta market MVP. Gen-z success graphical user interface bootstrapping assets partnership bandwidth handshake business-to-consumer equity. Investor first mover advantage direct mailing A/B testing launch party funding influencer hackathon client beta virality market stealth long tail.",
-    image: "https://source.unsplash.com/collection/1111575/800x450"
+    description: "Hackathon accelerator deployment founders.",
+    image: "https://source.unsplash.com/collection/209138/800x450"
   },
   {
     _id: fc_writer3,
     title: "fc_writer3",
     subtitle: "A collection for my best posts on Medium",
-    description: "Interaction design hackathon conversion. Incubator founders investor traction gen-z direct mailing android strategy network effects value proposition. Hackathon accelerator deployment founders. IPhone ecosystem monetization market seed round deployment release. Partner network freemium long tail social proof termsheet early adopters user experience. Advisor prototype success A/B testing market non-disclosure agreement buzz infrastructure incubator funding buyer freemium venture. Infographic advisor analytics buzz research & development influencer entrepreneur crowdsource graphical user interface gamification deployment MVP stealth paradigm shift. Scrum project assets release beta market MVP. Gen-z success graphical user interface bootstrapping assets partnership bandwidth handshake business-to-consumer equity. Investor first mover advantage direct mailing A/B testing launch party funding influencer hackathon client beta virality market stealth long tail.",
-    image: "https://source.unsplash.com/collection/1111575/800x450"
+    description: "Direct mailing android strategy network effects value proposition.",
+    image: "https://source.unsplash.com/collection/420324/800x450"
   },
   {
     _id: fc_writer4,
     title: "fc_writer4",
     subtitle: "A collection for my best posts on Medium",
-    description: "Interaction design hackathon conversion. Incubator founders investor traction gen-z direct mailing android strategy network effects value proposition. Hackathon accelerator deployment founders. IPhone ecosystem monetization market seed round deployment release. Partner network freemium long tail social proof termsheet early adopters user experience. Advisor prototype success A/B testing market non-disclosure agreement buzz infrastructure incubator funding buyer freemium venture. Infographic advisor analytics buzz research & development influencer entrepreneur crowdsource graphical user interface gamification deployment MVP stealth paradigm shift. Scrum project assets release beta market MVP. Gen-z success graphical user interface bootstrapping assets partnership bandwidth handshake business-to-consumer equity. Investor first mover advantage direct mailing A/B testing launch party funding influencer hackathon client beta virality market stealth long tail.",
-    image: "https://source.unsplash.com/collection/1111575/800x450"
+    description: "Incubator founders investor traction gen-z.",
+    image: "https://source.unsplash.com/collection/923267/800x450"
   },
   {
     _id: fc_writer5,
     title: "fc_writer5",
     subtitle: "A collection for my best posts on Medium",
-    description: "Interaction design hackathon conversion. Incubator founders investor traction gen-z direct mailing android strategy network effects value proposition. Hackathon accelerator deployment founders. IPhone ecosystem monetization market seed round deployment release. Partner network freemium long tail social proof termsheet early adopters user experience. Advisor prototype success A/B testing market non-disclosure agreement buzz infrastructure incubator funding buyer freemium venture. Infographic advisor analytics buzz research & development influencer entrepreneur crowdsource graphical user interface gamification deployment MVP stealth paradigm shift. Scrum project assets release beta market MVP. Gen-z success graphical user interface bootstrapping assets partnership bandwidth handshake business-to-consumer equity. Investor first mover advantage direct mailing A/B testing launch party funding influencer hackathon client beta virality market stealth long tail.",
-    image: "https://source.unsplash.com/collection/1111575/800x450"
+    description: "Interaction design hackathon conversion.",
+    image: "https://source.unsplash.com/collection/1911873/800x450"
   },
   {
     _id: fc_trendhunter1,
     title: "fc_trendhunter1",
     subtitle: "Focusing on Research and Trends",
-    description: "Incubator stealth client business-to-consumer bandwidth niche market user experience. Buyer termsheet first mover advantage validation supply chain rockstar crowdsource MVP seed money conversion. Funding buyer user experience angel investor long tail handshake. Value proposition sales metrics. Launch party business model canvas conversion. Direct mailing founders termsheet niche market value proposition startup entrepreneur iPad ownership focus analytics holy grail. Gamification leverage learning curve success series A financing stock funding graphical user interface holy grail strategy pitch monetization agile development. Learning curve agile development paradigm shift prototype creative churn rate. Backing prototype niche market agile development hypotheses. Virality scrum project conversion funding startup social proof success termsheet sales.",
+    description: "Rockstar crowdsource MVP seed money conversion.",
     image: "https://source.unsplash.com/collection/429524/800x450"
   },
   {
     _id: fc_trendhunter2,
     title: "fc_trendhunter2",
     subtitle: "Focusing on Research and Trends",
-    description: "Incubator stealth client business-to-consumer bandwidth niche market user experience. Buyer termsheet first mover advantage validation supply chain rockstar crowdsource MVP seed money conversion. Funding buyer user experience angel investor long tail handshake. Value proposition sales metrics. Launch party business model canvas conversion. Direct mailing founders termsheet niche market value proposition startup entrepreneur iPad ownership focus analytics holy grail. Gamification leverage learning curve success series A financing stock funding graphical user interface holy grail strategy pitch monetization agile development. Learning curve agile development paradigm shift prototype creative churn rate. Backing prototype niche market agile development hypotheses. Virality scrum project conversion funding startup social proof success termsheet sales.",
-    image: "https://source.unsplash.com/collection/429524/800x450"
+    description: "Seed money conversion.",
+    image: "https://source.unsplash.com/collection/852718/800x450"
   },
   {
     _id: fc_trendhunter3,
     title: "fc_trendhunter3",
     subtitle: "Focusing on Research and Trends",
-    subtitle: "Incubator stealth client business-to-consumer bandwidth niche market user experience. Buyer termsheet first mover advantage validation supply chain rockstar crowdsource MVP seed money conversion. Funding buyer user experience angel investor long tail handshake. Value proposition sales metrics. Launch party business model canvas conversion. Direct mailing founders termsheet niche market value proposition startup entrepreneur iPad ownership focus analytics holy grail. Gamification leverage learning curve success series A financing stock funding graphical user interface holy grail strategy pitch monetization agile development. Learning curve agile development paradigm shift prototype creative churn rate. Backing prototype niche market agile development hypotheses. Virality scrum project conversion funding startup social proof success termsheet sales.",
-    image: "https://source.unsplash.com/collection/429524/800x450"
+    subtitle: "Advantage validation supply chain rockstar crowdsource MVP seed money conversion.",
+    image: "https://source.unsplash.com/collection/1976082/800x450"
   },
   {
     _id: fc_trendhunter4,
     title: "fc_trendhunter4",
     subtitle: "Focusing on Research and Trends",
-    description: "Incubator stealth client business-to-consumer bandwidth niche market user experience. Buyer termsheet first mover advantage validation supply chain rockstar crowdsource MVP seed money conversion. Funding buyer user experience angel investor long tail handshake. Value proposition sales metrics. Launch party business model canvas conversion. Direct mailing founders termsheet niche market value proposition startup entrepreneur iPad ownership focus analytics holy grail. Gamification leverage learning curve success series A financing stock funding graphical user interface holy grail strategy pitch monetization agile development. Learning curve agile development paradigm shift prototype creative churn rate. Backing prototype niche market agile development hypotheses. Virality scrum project conversion funding startup social proof success termsheet sales.",
-    image: "https://source.unsplash.com/collection/429524/800x450"
+    description: "Buyer termsheet first mover advantage validation supply chain rockstar crowdsource MVP.",
+    image: "https://source.unsplash.com/collection/1597792/800x450"
   },
   {
     _id: fc_trendhunter5,
     title: "fc_trendhunter5",
     subtitle: "Focusing on Research and Trends",
-    description: "Incubator stealth client business-to-consumer bandwidth niche market user experience. Buyer termsheet first mover advantage validation supply chain rockstar crowdsource MVP seed money conversion. Funding buyer user experience angel investor long tail handshake. Value proposition sales metrics. Launch party business model canvas conversion. Direct mailing founders termsheet niche market value proposition startup entrepreneur iPad ownership focus analytics holy grail. Gamification leverage learning curve success series A financing stock funding graphical user interface holy grail strategy pitch monetization agile development. Learning curve agile development paradigm shift prototype creative churn rate. Backing prototype niche market agile development hypotheses. Virality scrum project conversion funding startup social proof success termsheet sales.",
-    image: "https://source.unsplash.com/collection/429524/800x450"
+    description: "Incubator stealth client business-to-consumer bandwidth niche market user experience.",
+    image: "https://source.unsplash.com/collection/1223439/800x450"
   },
   {
     _id: fc_animator1,
     title: "fc_animator1",
     subtitle: "Best Display Ads compilation",
-    description: "Twitter bandwidth iteration. Churn rate iPad deployment network effects lean startup termsheet analytics buyer. Mass market low hanging fruit buyer A/B testing startup iteration vesting period traction. Network effects paradigm shift virality validation startup accelerator. Stealth backing low hanging fruit scrum project infographic alpha network effects handshake buzz founders startup. Technology handshake burn rate twitter value proposition disruptive facebook seed money accelerator iPhone innovator. Traction long tail investor mass market business model canvas lean startup venture product management alpha launch party direct mailing responsive web design. Crowdfunding deployment iPhone mass market twitter traction influencer partnership direct mailing business model canvas leverage. Entrepreneur vesting period facebook disruptive business model canvas. Startup vesting period release.",
-    image: "https://source.unsplash.com/collection/1223439/800x450"
+    description: "Network effects paradigm shift virality validation startup accelerator.",
+    image: "https://source.unsplash.com/collection/429524/800x450"
   },
   {
     _id: fc_animator2,
     title: "fc_animator2",
     subtitle: "Best Display Ads compilation",
-    description: "Twitter bandwidth iteration. Churn rate iPad deployment network effects lean startup termsheet analytics buyer. Mass market low hanging fruit buyer A/B testing startup iteration vesting period traction. Network effects paradigm shift virality validation startup accelerator. Stealth backing low hanging fruit scrum project infographic alpha network effects handshake buzz founders startup. Technology handshake burn rate twitter value proposition disruptive facebook seed money accelerator iPhone innovator. Traction long tail investor mass market business model canvas lean startup venture product management alpha launch party direct mailing responsive web design. Crowdfunding deployment iPhone mass market twitter traction influencer partnership direct mailing business model canvas leverage. Entrepreneur vesting period facebook disruptive business model canvas. Startup vesting period release.",
-    image: "https://source.unsplash.com/collection/1223439/800x450"
+    description: "Stealth backing low hanging fruit scrum project infographic alpha network effects.",
+    image: "https://source.unsplash.com/collection/1111575/800x450"
   },
   {
     _id: fc_animator3,
     title: "fc_animator3",
     subtitle: "Best Display Ads compilation",
-    description: "Twitter bandwidth iteration. Churn rate iPad deployment network effects lean startup termsheet analytics buyer. Mass market low hanging fruit buyer A/B testing startup iteration vesting period traction. Network effects paradigm shift virality validation startup accelerator. Stealth backing low hanging fruit scrum project infographic alpha network effects handshake buzz founders startup. Technology handshake burn rate twitter value proposition disruptive facebook seed money accelerator iPhone innovator. Traction long tail investor mass market business model canvas lean startup venture product management alpha launch party direct mailing responsive web design. Crowdfunding deployment iPhone mass market twitter traction influencer partnership direct mailing business model canvas leverage. Entrepreneur vesting period facebook disruptive business model canvas. Startup vesting period release.",
-    image: "https://source.unsplash.com/collection/1223439/800x450"
+    description: "Churn rate iPad deployment network effects lean startup termsheet analytics buyer.",
+    image: "https://source.unsplash.com/collection/1074434/800x450"
   },
   {
     _id: fc_animator4,
     title: "fc_animator4",
     subtitle: "Best Display Ads compilation",
-    description: "Twitter bandwidth iteration. Churn rate iPad deployment network effects lean startup termsheet analytics buyer. Mass market low hanging fruit buyer A/B testing startup iteration vesting period traction. Network effects paradigm shift virality validation startup accelerator. Stealth backing low hanging fruit scrum project infographic alpha network effects handshake buzz founders startup. Technology handshake burn rate twitter value proposition disruptive facebook seed money accelerator iPhone innovator. Traction long tail investor mass market business model canvas lean startup venture product management alpha launch party direct mailing responsive web design. Crowdfunding deployment iPhone mass market twitter traction influencer partnership direct mailing business model canvas leverage. Entrepreneur vesting period facebook disruptive business model canvas. Startup vesting period release.",
-    image: "https://source.unsplash.com/collection/1223439/800x450"
+    description: "Twitter bandwidth iteration.",
+    image: "https://source.unsplash.com/collection/1346770/800x450"
   },
   {
     _id: fc_animator5,
     title: "fc_animator5",
     subtitle: "Best Display Ads compilation",
-    description: "Twitter bandwidth iteration. Churn rate iPad deployment network effects lean startup termsheet analytics buyer. Mass market low hanging fruit buyer A/B testing startup iteration vesting period traction. Network effects paradigm shift virality validation startup accelerator. Stealth backing low hanging fruit scrum project infographic alpha network effects handshake buzz founders startup. Technology handshake burn rate twitter value proposition disruptive facebook seed money accelerator iPhone innovator. Traction long tail investor mass market business model canvas lean startup venture product management alpha launch party direct mailing responsive web design. Crowdfunding deployment iPhone mass market twitter traction influencer partnership direct mailing business model canvas leverage. Entrepreneur vesting period facebook disruptive business model canvas. Startup vesting period release.",
-    image: "https://source.unsplash.com/collection/1223439/800x450"
+    description: "Startup iteration vesting period traction. Network effects paradigm shift virality validation startup access.",
+    image: "https://source.unsplash.com/collection/369/800x450"
   },
   {
     _id: fc_photographer1,
     title: "fc_photographer1",
     subtitle: "What do I do with a cam?",
-    description: "Partnership agile development gen-z release android partner network accelerator return on investment responsive web design paradigm shift ramen angel investor success. Buyer partnership series A financing iteration business-to-consumer technology product management assets channels. Launch party startup social proof deployment crowdfunding MVP low hanging fruit. Creative pitch deployment rockstar traction research & development accelerator monetization burn rate churn rate entrepreneur conversion. Seed money stealth business plan validation iPhone marketing. Entrepreneur android backing twitter burn rate paradigm shift release. Iteration direct mailing responsive web design research & development return on investment scrum project graphical user interface funding channels metrics churn rate business-to-consumer burn rate. Low hanging fruit business plan venture business-to-consumer partnership metrics android bootstrapping incubator beta startup interaction design research & development. Handshake graphical user interface social proof interaction design investor buyer partner network network effects research & development. Launch party buyer success hackathon equity niche market marketing validation customer focus strategy.",
+    description: "Responsive web design paradigm shift ramen angel investor success.",
     image: "https://source.unsplash.com/collection/1597792/800x450"
   },
   {
     _id: fc_photographer2,
     title: "fc_photographer2",
     subtitle: "What do I do with a cam?",
-    description: "Partnership agile development gen-z release android partner network accelerator return on investment responsive web design paradigm shift ramen angel investor success. Buyer partnership series A financing iteration business-to-consumer technology product management assets channels. Launch party startup social proof deployment crowdfunding MVP low hanging fruit. Creative pitch deployment rockstar traction research & development accelerator monetization burn rate churn rate entrepreneur conversion. Seed money stealth business plan validation iPhone marketing. Entrepreneur android backing twitter burn rate paradigm shift release. Iteration direct mailing responsive web design research & development return on investment scrum project graphical user interface funding channels metrics churn rate business-to-consumer burn rate. Low hanging fruit business plan venture business-to-consumer partnership metrics android bootstrapping incubator beta startup interaction design research & development. Handshake graphical user interface social proof interaction design investor buyer partner network network effects research & development. Launch party buyer success hackathon equity niche market marketing validation customer focus strategy.",
-    image: "https://source.unsplash.com/collection/1597792/800x450"
+    description: "Return on investment responsive web design paradigm shift ramen angel investor success.",
+    image: "https://source.unsplash.com/collection/2276562/800x450"
   },
   {
     _id: fc_photographer3,
     title: "fc_photographer3",
     subtitle: "What do I do with a cam?",
-    description: "Partnership agile development gen-z release android partner network accelerator return on investment responsive web design paradigm shift ramen angel investor success. Buyer partnership series A financing iteration business-to-consumer technology product management assets channels. Launch party startup social proof deployment crowdfunding MVP low hanging fruit. Creative pitch deployment rockstar traction research & development accelerator monetization burn rate churn rate entrepreneur conversion. Seed money stealth business plan validation iPhone marketing. Entrepreneur android backing twitter burn rate paradigm shift release. Iteration direct mailing responsive web design research & development return on investment scrum project graphical user interface funding channels metrics churn rate business-to-consumer burn rate. Low hanging fruit business plan venture business-to-consumer partnership metrics android bootstrapping incubator beta startup interaction design research & development. Handshake graphical user interface social proof interaction design investor buyer partner network network effects research & development. Launch party buyer success hackathon equity niche market marketing validation customer focus strategy.",
-    image: "https://source.unsplash.com/collection/1597792/800x450"
+    description: "accelerator return on investment responsive web design paradigm shift ramen angel investor success.",
+    image: "https://source.unsplash.com/collection/291422/800x450"
   },
   {
     _id: fc_photographer4,
     title: "ffc_photographer4",
     subtitle: "What do I do with a cam?",
-    subtitle: "Partnership agile development gen-z release android partner network accelerator return on investment responsive web design paradigm shift ramen angel investor success. Buyer partnership series A financing iteration business-to-consumer technology product management assets channels. Launch party startup social proof deployment crowdfunding MVP low hanging fruit. Creative pitch deployment rockstar traction research & development accelerator monetization burn rate churn rate entrepreneur conversion. Seed money stealth business plan validation iPhone marketing. Entrepreneur android backing twitter burn rate paradigm shift release. Iteration direct mailing responsive web design research & development return on investment scrum project graphical user interface funding channels metrics churn rate business-to-consumer burn rate. Low hanging fruit business plan venture business-to-consumer partnership metrics android bootstrapping incubator beta startup interaction design research & development. Handshake graphical user interface social proof interaction design investor buyer partner network network effects research & development. Launch party buyer success hackathon equity niche market marketing validation customer focus strategy.",
-    image: "https://source.unsplash.com/collection/1597792/800x450"
+    subtitle: "Launch party startup social proof deployment crowdfunding MVP low hanging fruit.",
+    image: "https://source.unsplash.com/collection/162213/800x450"
   },
   {
     _id: fc_photographer5,
     title: "fc_photographer5",
     subtitle: "What do I do with a cam?",
-    description: "Partnership agile development gen-z release android partner network accelerator return on investment responsive web design paradigm shift ramen angel investor success. Buyer partnership series A financing iteration business-to-consumer technology product management assets channels. Launch party startup social proof deployment crowdfunding MVP low hanging fruit. Creative pitch deployment rockstar traction research & development accelerator monetization burn rate churn rate entrepreneur conversion. Seed money stealth business plan validation iPhone marketing. Entrepreneur android backing twitter burn rate paradigm shift release. Iteration direct mailing responsive web design research & development return on investment scrum project graphical user interface funding channels metrics churn rate business-to-consumer burn rate. Low hanging fruit business plan venture business-to-consumer partnership metrics android bootstrapping incubator beta startup interaction design research & development. Handshake graphical user interface social proof interaction design investor buyer partner network network effects research & development. Launch party buyer success hackathon equity niche market marketing validation customer focus strategy.",
-    image: "https://source.unsplash.com/collection/1597792/800x450"
+    description: "Buyer partnership series A financing iteration business-to-consumer ",
+    image: "https://source.unsplash.com/collection/827743/800x450"
   },
   {
     _id: fc_uxdesigner1,
     title: "fc_uxdesigner1",
     subtitle: "Best UX Designer Projects",
-    subtitle: "Seed round focus user experience handshake first mover advantage product management success churn rate freemium release gen-z. Beta entrepreneur social media bootstrapping buyer responsive web design monetization business-to-business. Deployment freemium creative A/B testing niche market social media venture marketing early adopters conversion iPad burn rate. Handshake market facebook virality success stealth marketing android. Equity venture scrum project innovator. Burn rate influencer gamification non-disclosure agreement learning curve agile development business-to-consumer deployment hackathon metrics. Focus technology client mass market creative influencer angel investor venture pivot scrum project. Leverage agile development stealth A/B testing user experience. Accelerator client backing vesting period long tail seed money iPad series A financing iteration gen-z A/B testing network effects sales agile development. Market network effects partnership buyer seed money business-to-consumer leverage research & development.",
+    subtitle: "Seed round focus user experience handshake first mover advantage product management success churn rate freemium release gen-z.",
     image: "https://source.unsplash.com/collection/1976082/800x450"
   },
   {
     _id: fc_uxdesigner2,
     title: "fc_uxdesigner2",
     subtitle: "Best UX Designer Projects",
-    description: "Seed round focus user experience handshake first mover advantage product management success churn rate freemium release gen-z. Beta entrepreneur social media bootstrapping buyer responsive web design monetization business-to-business. Deployment freemium creative A/B testing niche market social media venture marketing early adopters conversion iPad burn rate. Handshake market facebook virality success stealth marketing android. Equity venture scrum project innovator. Burn rate influencer gamification non-disclosure agreement learning curve agile development business-to-consumer deployment hackathon metrics. Focus technology client mass market creative influencer angel investor venture pivot scrum project. Leverage agile development stealth A/B testing user experience. Accelerator client backing vesting period long tail seed money iPad series A financing iteration gen-z A/B testing network effects sales agile development. Market network effects partnership buyer seed money business-to-consumer leverage research & development.",
-    image: "https://source.unsplash.com/collection/1976082/800x450"
+    description: "Beta entrepreneur social media bootstrapping buyer responsive web design monetization business-to-business. ",
+    image: "https://source.unsplash.com/collection/3582397/800x450"
   },
   {
     _id: fc_uxdesigner3,
     title: "fc_uxdesigner3",
     subtitle: "Best UX Designer Projects",
-    description: "Seed round focus user experience handshake first mover advantage product management success churn rate freemium release gen-z. Beta entrepreneur social media bootstrapping buyer responsive web design monetization business-to-business. Deployment freemium creative A/B testing niche market social media venture marketing early adopters conversion iPad burn rate. Handshake market facebook virality success stealth marketing android. Equity venture scrum project innovator. Burn rate influencer gamification non-disclosure agreement learning curve agile development business-to-consumer deployment hackathon metrics. Focus technology client mass market creative influencer angel investor venture pivot scrum project. Leverage agile development stealth A/B testing user experience. Accelerator client backing vesting period long tail seed money iPad series A financing iteration gen-z A/B testing network effects sales agile development. Market network effects partnership buyer seed money business-to-consumer leverage research & development.",
-    image: "https://source.unsplash.com/collection/1976082/800x450"
+    description: "product management success churn rate freemium release gen-z. Beta entrepreneur social ",
+    image: "https://source.unsplash.com/collection/1901880/800x450"
   },
   {
     _id: fc_uxdesigner4,
     title: "fc_uxdesigner4",
     subtitle: "Best UX Designer Projects",
-    description: "Seed round focus user experience handshake first mover advantage product management success churn rate freemium release gen-z. Beta entrepreneur social media bootstrapping buyer responsive web design monetization business-to-business. Deployment freemium creative A/B testing niche market social media venture marketing early adopters conversion iPad burn rate. Handshake market facebook virality success stealth marketing android. Equity venture scrum project innovator. Burn rate influencer gamification non-disclosure agreement learning curve agile development business-to-consumer deployment hackathon metrics. Focus technology client mass market creative influencer angel investor venture pivot scrum project. Leverage agile development stealth A/B testing user experience. Accelerator client backing vesting period long tail seed money iPad series A financing iteration gen-z A/B testing network effects sales agile development. Market network effects partnership buyer seed money business-to-consumer leverage research & development.",
-    image: "https://source.unsplash.com/collection/1976082/800x450"
+    description: "Deployment freemium creative A/B testing niche market social media venture marketing early adopters conversion.",
+    image: "https://source.unsplash.com/collection/1198107/800x450"
   },
   {
     _id: fc_uxdesigner5,
     title: "fc_uxdesigner5",
     subtitle: "Best UX Designer Projects",
-    description: "Seed round focus user experience handshake first mover advantage product management success churn rate freemium release gen-z. Beta entrepreneur social media bootstrapping buyer responsive web design monetization business-to-business. Deployment freemium creative A/B testing niche market social media venture marketing early adopters conversion iPad burn rate. Handshake market facebook virality success stealth marketing android. Equity venture scrum project innovator. Burn rate influencer gamification non-disclosure agreement learning curve agile development business-to-consumer deployment hackathon metrics. Focus technology client mass market creative influencer angel investor venture pivot scrum project. Leverage agile development stealth A/B testing user experience. Accelerator client backing vesting period long tail seed money iPad series A financing iteration gen-z A/B testing network effects sales agile development. Market network effects partnership buyer seed money business-to-consumer leverage research & development.",
-    image: "https://source.unsplash.com/collection/1976082/800x450"
+    description: "creative influencer angel investor venture pivot scrum project. Leverage agile development stealth A/B testing user experience.",
+    image: "https://source.unsplash.com/collection/209138/800x450"
   }                                                                                     
 ]
 
@@ -891,28 +891,7 @@ let layouts = []
 let movements = []
 let transitions = [] 
 
-If needed, more Unsplash Collections here:
-https://source.unsplash.com/collection/209138/800x450
-https://source.unsplash.com/collection/1198107/800x450
-https://source.unsplash.com/collection/1901880/800x450
-https://source.unsplash.com/collection/3582397/800x450
-https://source.unsplash.com/collection/827743/800x450
-https://source.unsplash.com/collection/162213/800x450
-https://source.unsplash.com/collection/291422/800x450
-https://source.unsplash.com/collection/2276562/800x450    
-https://source.unsplash.com/collection/369/800x450
-https://source.unsplash.com/collection/1346770/800x450
 
-https://source.unsplash.com/collection/1074434/800x450
-https://source.unsplash.com/collection/1111575/800x450
-https://source.unsplash.com/collection/429524/800x450
-https://source.unsplash.com/collection/1223439/800x450
-https://source.unsplash.com/collection/1597792/800x450
-https://source.unsplash.com/collection/1976082/800x450
-https://unsplash.com/collections/852718/vibrant-blackouts-(oled)
-https://unsplash.com/collections/1911873/street-life-photowalk
-https://unsplash.com/collections/923267/colour
-https://unsplash.com/collections/420324/blurrrr
 */
 
 // Heroku -> MONGODB_URL   -> .connect(`${process.env.MONGODB_URL}`, 

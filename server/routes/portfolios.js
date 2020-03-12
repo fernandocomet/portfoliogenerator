@@ -47,7 +47,6 @@ router.get("/userportfolios", (req, res, next) => {
 
 /* Route to Delete Portfolio */
 router.delete("/portfolio/delete/:id", (req, res, next) => {
-  console.log(req.params.id);
   Portfolio.findByIdAndDelete(req.params.id)
     .then(portfolio => {
       res.json(portfolio);

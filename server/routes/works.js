@@ -37,13 +37,40 @@ router.get("/userworks", (req, res, next) => {
 //This is ok at http://localhost:4000/works/userworks
 
 /* Route to Delete Work */
-router.delete('/work/delete/:id', (req, res, next) => {
+router.delete("/work/delete/:id", (req, res, next) => {
   Work.findByIdAndDelete(req.params.id)
     .then(work => {
       res.json(work);
     })
-    .catch(err => console.log(err))
-})
+    .catch(err => console.log(err));
+});
+
+
+// router.delete('/work/delete/:idWork/:idPortfolio', (req, res, next) => {
+//   Work.findByIdAndDelete(req.params.id)
+//     .then(work => {
+//       Portfolio.findByIdAndUpdate(req.params.portfolioId, { $pull: { works: req.params.id}}, {new: true})
+//       .then(work => res.json(work))
+//     })
+//     .catch(err => console.log(err))
+// })
+
+// router.delete("/:id/:patientId", (req, res, next) => {
+//   const { id, patientId } = req.params;
+//   Registry.findByIdAndDelete(id)
+//     .then(() =>
+//       Patient.findByIdAndUpdate(
+//         patientId,
+//         {
+//           $pull: { registries: id }
+//         },
+//         { new: true }
+//       ).then(patient => res.status(200).json(patient))
+//     )
+//     .cath(error =>
+//       res.status(500).json({ message: "Error deleting Registry" })
+//     );
+// });
 //This is working at http://localhost:4000/works/work/delete/5e623324140d067d79d4db02
 
 
