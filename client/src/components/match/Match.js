@@ -65,7 +65,11 @@ class Match extends Component {
           })
         .catch(err => console.log(err));
   }
-
+ 
+  getWorkDetail = portfolioworks => {
+      //Meter los ids
+  }
+    
 
  
 
@@ -103,7 +107,7 @@ class Match extends Component {
                 {
                     this.state.portfolioworks.map(portfoliowork => (
                        <ul className="list-group">
-                            <li type="button" className="list-group-item list-group-item-action "> {portfoliowork._id} hola </li>
+                            <li type="button" className="list-group-item list-group-item-action "> {portfoliowork} </li>
                             {/* <li className="list-group-item list-group-item-dark">{work.title}</li> */}
                         </ul>
                     ))

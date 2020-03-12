@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 class Contents extends Component {
   render() {
     return (<div>
-        <p>Content - The quick brown fox jumps over the lazy dog.</p>
+        {/* <p>Content - The quick brown fox jumps over the lazy dog.</p> */}
         </div>);
     
   }

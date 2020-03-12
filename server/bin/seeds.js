@@ -760,7 +760,7 @@ let works = [
     _id: fc_trendhunter3,
     title: "fc_trendhunter3",
     subtitle: "Focusing on Research and Trends",
-    subtitle: "Advantage validation supply chain rockstar crowdsource MVP seed money conversion.",
+    subtitle: "Advantage validation supply chain rockstar.",
     image: "https://source.unsplash.com/collection/1976082/800x450"
   },
   {
@@ -817,41 +817,41 @@ let works = [
     title: "fc_photographer1",
     subtitle: "What do I do with a cam?",
     description: "Responsive web design paradigm shift ramen angel investor success.",
-    image: "https://source.unsplash.com/collection/1597792/800x450"
+    image: "https://source.unsplash.com/collection/1597792/1200x675"
   },
   {
     _id: fc_photographer2,
     title: "fc_photographer2",
     subtitle: "What do I do with a cam?",
     description: "Return on investment responsive web design paradigm shift ramen angel investor success.",
-    image: "https://source.unsplash.com/collection/2276562/800x450"
+    image: "https://source.unsplash.com/collection/2276562/1200x675"
   },
   {
     _id: fc_photographer3,
     title: "fc_photographer3",
     subtitle: "What do I do with a cam?",
     description: "accelerator return on investment responsive web design paradigm shift ramen angel investor success.",
-    image: "https://source.unsplash.com/collection/291422/800x450"
+    image: "https://source.unsplash.com/collection/291422/1200x675"
   },
   {
     _id: fc_photographer4,
-    title: "ffc_photographer4",
+    title: "fc_photographer4",
     subtitle: "What do I do with a cam?",
-    subtitle: "Launch party startup social proof deployment crowdfunding MVP low hanging fruit.",
-    image: "https://source.unsplash.com/collection/162213/800x450"
+    subtitle: "Launch party startup social proof deployment crowdfunding fruit.",
+    image: "https://source.unsplash.com/collection/162213/1200x675"
   },
   {
     _id: fc_photographer5,
     title: "fc_photographer5",
     subtitle: "What do I do with a cam?",
     description: "Buyer partnership series A financing iteration business-to-consumer ",
-    image: "https://source.unsplash.com/collection/827743/800x450"
+    image: "https://source.unsplash.com/collection/827743/1200x675"
   },
   {
     _id: fc_uxdesigner1,
     title: "fc_uxdesigner1",
     subtitle: "Best UX Designer Projects",
-    subtitle: "Seed round focus user experience handshake first mover advantage product management success churn rate freemium release gen-z.",
+    subtitle: "Seed round focus user experience handshake first mover ",
     image: "https://source.unsplash.com/collection/1976082/800x450"
   },
   {
@@ -879,7 +879,7 @@ let works = [
     _id: fc_uxdesigner5,
     title: "fc_uxdesigner5",
     subtitle: "Best UX Designer Projects",
-    description: "creative influencer angel investor venture pivot scrum project. Leverage agile development stealth A/B testing user experience.",
+    description: "creative influencer angel investor venture pivot scrum project",
     image: "https://source.unsplash.com/collection/209138/800x450"
   }                                                                                     
 ]
@@ -890,8 +890,6 @@ let menu = []
 let layouts = []
 let movements = []
 let transitions = [] 
-
-
 */
 
 // Heroku -> MONGODB_URL   -> .connect(`${process.env.MONGODB_URL}`, 
