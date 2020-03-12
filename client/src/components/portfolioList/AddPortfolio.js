@@ -15,7 +15,7 @@ const AddPortfolio = () => {
                     <h5 className="card-title">Create a new Portfolio</h5>
                     <p className="card-text"></p>
                     {/* <p className="card-text">id = {_id}</p> */}
-                    <button className="btn btn-light">
+                    <button className="btn btn-link">
                         <Link to={{pathname: `/newportfolio`}}>Create now</Link>
                     </button>               
                 </div> 

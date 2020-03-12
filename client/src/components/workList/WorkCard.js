@@ -29,11 +29,11 @@ const WorkCard = ({
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text2">{subtitle}</p>
-          <button className="btn btn-light">
+          <button className="btn btn-link">
           <Link to={{ pathname: `/work/${_id}` }}>See more</Link>
         </button>
         <button
-          className="btn btn-light"
+          className="btn btn-link"
           onClick={event => _handleDelete(event)}
         >
           Delete

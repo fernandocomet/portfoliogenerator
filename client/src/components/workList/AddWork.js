@@ -15,7 +15,7 @@ const AddWork = () => {
                     <h5 className="card-title">Create a new Work</h5>
                     <p className="card-text"></p>
                     {/* <p className="card-text">id = {_id}</p> */}
-                    <button className="btn btn-light">
+                    <button className="btn btn-link">
                         <Link to={{pathname: `/newwork`}}>Create now</Link>
                     </button>               
                 </div> 
