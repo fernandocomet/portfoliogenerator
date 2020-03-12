@@ -32,6 +32,11 @@ export default class Services {
   createWorkGet = () =>
     this.service.get("/newwork").then(response => response.data);
 
+  createPortfolioPost = portfolio =>
+    this.service
+      .post("/newportfolio", portfolio)
+      .then(response => response.data);
+
   createWorkPost = work =>
     this.service
     .post("/newwork", work)

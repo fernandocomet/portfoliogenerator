@@ -10,7 +10,7 @@ class Match extends Component {
     this.state = {
       portfolios: [],
       works: [],
-      portfolioWorks:[], 
+      portfolioworks:[], 
       userId: this.props.userData._id,
       portfolioId: this.props.userData._id
     }
@@ -21,9 +21,11 @@ class Match extends Component {
   componentDidMount = () => {
       this.getPortfoliosFromUser();
       this.getWorksFromUser();
+      this.getPortfolioWorks();
   }
 
   getPortfoliosFromUser = () => {
+    console.log("userId = " + this.state.userId) 
     this.services
         .getPortfoliosFromUser(this.state.userId)
         .then(allPortfolios => {
@@ -46,16 +48,17 @@ class Match extends Component {
   }
 
   getPortfolioWorks = () => {
-      console.log(this.state.portfolioId)
+      console.log("portfolioId = " + this.state.portfolioId)  //CUIDADO ES el id del User, lo confunde con el de Portfolio porque le paso lo mismo
       this.services
         .getPortfolioWorks(this.state.portfolioId)
-        .then(allPortfolioWorks => {
+        .then(allportfolioworks => {
             return this.setState({
-              portfolioWorks: allPortfolioWorks
+              portfolioworks: allportfolioworks
             });
           })
-          .catch(err => console.log(err));
+        .catch(err => console.log(err));
   }
+
 
  
 
@@ -67,8 +70,8 @@ class Match extends Component {
                 {
                     this.state.portfolios.map(portfolio => (
                        <ul className="list-group">
-                            <button type="button" class="list-group-item list-group-item-action" onClick={event =>console.log("Click!")}> {portfolio.title} </button>
-                            {/*<li className="list-group-item list-group-item-dark">{portfolio.title}</li>
+                            <button type="button" className="list-group-item list-group-item-action"  onClick={event => console.log("Click!")}> {portfolio.title} {portfolio._id} </button>
+                            {/*<li className="list-group-item list-group-item-dark">{portfolio.title}</li>  onClick={event => this.getPortfolioWorks(portfolio._id)}
                              <li className="list-group-item list-group-item-dark" onClick={event => this.getPortfolioWorks(this.state.portfolioId)}>{portfolio.title}</li> 
                              
                               onClick={event => _handleClick(event)}
@@ -78,11 +81,22 @@ class Match extends Component {
                 }
             </div>  
             <div className="works">
-                <h2>All Works</h2>
+                <h2>Works</h2>
                 {
                     this.state.works.map(work => (
                        <ul className="list-group">
-                            <button type="button" class="list-group-item list-group-item-action "> {work.title} </button>
+                            <button type="button" className="list-group-item list-group-item-action "> {work.title} {work._id} </button>
+                            {/* <li className="list-group-item list-group-item-dark">{work.title}</li> */}
+                        </ul>
+                    ))
+                }
+            </div>   
+            <div className="PortfolioWorks">
+                <h2>Portfolio Works</h2>
+                {
+                    this.state.portfolioworks.map(portfoliowork => (
+                       <ul className="list-group">
+                            <button type="button" className="list-group-item list-group-item-action "> {portfoliowork.title} hola </button>
                             {/* <li className="list-group-item list-group-item-dark">{work.title}</li> */}
                         </ul>
                     ))
@@ -96,18 +110,18 @@ class Match extends Component {
 
 export default Match;
 /*
-<div class="row">
-  <div class="col-4">
-    <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">{portfolio.title} </a>
+<div className="row">
+  <div className="col-4">
+    <div className="list-group" id="list-tab" role="tablist">
+      <a className="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">{portfolio.title} </a>
     </div>
   </div>
-  <div class="col-8">
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
-      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+  <div className="col-8">
+    <div className="tab-content" id="nav-tabContent">
+      <div className="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+      <div className="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+      <div className="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+      <div className="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
     </div>
   </div>
 </div>
