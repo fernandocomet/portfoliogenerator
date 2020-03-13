@@ -12,18 +12,19 @@
     margin-top: 100px;
     text-align: center;
     font-size: 100px;
-    color: #2699FB;
+    color: white;
 }
 
 .megasubtitle{
     margin: 0, auto;
     font-size: 36px;
-    color: #2699FB;
+    color: white;
+    /* //#2699FB; */
     padding-left: 100px;
     padding-right: 100px;
 }
 
 fieldset{
-    color: #2699FB;
+    color: white;
 
 }

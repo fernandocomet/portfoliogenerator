@@ -99,9 +99,7 @@ class App extends Component {
                 <Route path="/work/:id" render={props => <WorkDetails {...props} />} />
                 <Route path="/newwork" render={props => <CreateWork {...props} />} />
                 <Route path="/editwork/:id" render={props => <EditWork {...props} />} />
-                {/* <Route path="/editwork/:id" render={props => <EditWork {...props} />} /> */}
 
-                {/* <Route path="/home" render={props => <Contents {...props} />} /> */}
                 {/* <Route exact path="/home" component={App} />*/}
                 <Route exact path="/match" render={props => <Match userData={this.state.loggedInUser} portfolioData={this.state.portfolios} />} />
                 <Route exact path="/portfolios" component={FinalPortfolios} />  
@@ -114,8 +112,6 @@ class App extends Component {
                   />
               </Switch>
               <Contents /> 
-               {/* <PortfolioList userData={this.state.loggedInUser} />
-               <WorkList userData={this.state.loggedInUser} />  */}
               
 
               <Footer />

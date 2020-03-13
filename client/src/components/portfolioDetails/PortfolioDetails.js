@@ -39,7 +39,7 @@ class PortfolioDetails extends Component {
             <div className="card-body">
               <h5 className="card-title">{this.state.portfolio.title}</h5>
               <p className="card-text">{this.state.portfolio.subtitle}</p>
-              <button className="btn btn-light">
+              <button className="btn btn-link">
                 <Link
                   to={{
                     pathname: `/editportfolio/${this.state.portfolio._id}`

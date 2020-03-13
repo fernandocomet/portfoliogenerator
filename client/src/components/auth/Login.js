@@ -43,6 +43,7 @@ class Login extends Component {
   render() {
 
     return (<div className="login">
+ 
       <span className="megatitle">Portfolio Generator</span>
       <span className="megasubtitle">Create multiple portfolios at once. If you are a web designer, an illustrator and a photographer, now you can have a portfolio for each one of your profiles. It is easy and fast. We have big achievements in the job market using our tool. </span>
 

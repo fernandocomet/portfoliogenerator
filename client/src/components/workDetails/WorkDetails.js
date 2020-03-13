@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import "./PortfolioDetails.css";
+import "./WorkDetails.css";
 
 import Workservices from "../../services/workservices";
 
@@ -40,7 +40,7 @@ class WorkDetails extends Component {
             <div className="card-body">
               <h5 className="card-title">{this.state.work.title}</h5>
               <p className="card-text">{this.state.work.subtitle}</p>
-              <button className="btn btn-light">
+              <button className="btn btn-link">
                 <Link
                   to={{
                      pathname: `/editwork/${this.state.work._id}`
