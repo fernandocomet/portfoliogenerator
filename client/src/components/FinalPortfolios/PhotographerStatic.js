@@ -1,16 +1,13 @@
 
 import React, { Component } from 'react';
-import "./FinalPortfolios.css";
 
-import { Link } from "react-router-dom";
+
 //import { Link } from './node_modules/react-router-dom'
 
-const FinalPortfolios = () => {
+const PhotographerStatic = () => {
     return (
-        <div className="container1">
-            <Link to="/portfolios/photographer_static" className="nav-link2">Photographer Static</Link>
-            <Link to="/portfolios/photographer_gsap" className="nav-link2">Photographer gsap</Link>
-            {/* <h1>fc_photographer</h1> 
+        <div id="container">
+            <h1>fc_photographer</h1> 
             <div id="work1">
                 <h2>fc_photographer1</h2>
                 <h3>What do I do with a cam?</h3>
@@ -40,9 +37,9 @@ const FinalPortfolios = () => {
                 <h3>Experimental shoots taken on everyday life</h3>
                 <p>Buyer partnership series A financing iteration business-to-consumer </p>
                 <img src="https://source.unsplash.com/collection/827743/1600x675"/>
-            </div> */}
+            </div>
         </div>
     )
 }
 
-export default FinalPortfolios
+export default PhotographerStatic

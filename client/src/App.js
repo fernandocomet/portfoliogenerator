@@ -22,6 +22,8 @@ import CreateWork from "./components/workForm/CreateWork";
 import EditWork from "./components/workForm/EditWork";
 import Portfolioservices from "./services/portfolioservices";
 import 'reset-css';
+import PhotographerStatic from "./components/FinalPortfolios/PhotographerStatic";
+import PhotographerGsap from "./components/FinalPortfolios/PhotographerGsap";
 
 
 
@@ -103,6 +105,8 @@ class App extends Component {
                 {/* <Route exact path="/home" component={App} />*/}
                 <Route exact path="/match" render={props => <Match userData={this.state.loggedInUser} portfolioData={this.state.portfolios} />} />
                 <Route exact path="/portfolios" component={FinalPortfolios} />  
+                <Route exact path="/portfolios/photographer_static" component={PhotographerStatic} />  
+                <Route exact path="/portfolios/photographer_gsap" component={PhotographerGsap} />  
                 <Route path="/home" render={props => 
                   <>
                     <PortfolioList userData={this.state.loggedInUser} updatePortfolio={(event) => this.updatePortfolio(event)} />

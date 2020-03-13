@@ -11,6 +11,7 @@ class Match extends Component {
       portfolios: [],
       works: [],
       portfolioworks:[], 
+      work:[],
       userId: this.props.userData._id
     }
     this.services = new Portfolioservices();
@@ -66,10 +67,14 @@ class Match extends Component {
         .catch(err => console.log(err));
   }
  
-  getWorkDetail = portfolioworks => {
-      //Meter los ids
-  }
-    
+  /* getWorkDetail = () => {
+    this.services
+      .getWorkDetail(portfolioworks)
+      .then(thework => this.setState({ work: thework.title }))
+      .catch(err => console.log(err));
+  }; */
+
+
 
  
 
