@@ -40,8 +40,8 @@ const app = express();
 
 // Middleware Setup
 var whitelist = [
-  "http://localhost:3000", 
-  "https://pgenerator.herokuapp.com"
+  "http://localhost:3000"
+  // "https://pgenerator.herokuapp.com"
 ];
 
 var corsOptions = {
